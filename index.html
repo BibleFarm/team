@@ -1,1 +1,2395 @@
-team // sample index.html file
+<html>
+<!-- website/avi v0.58 html -->
+<!-- combine & minify JS here: https://www.sitelocity.com/critical-path-css-generator -->
+<!-- combine & minify JS here: https://jscompress.com/ -->
+
+<head>
+  <!-- Essential -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- ////////////////////////// -->
+  <!-- BEGIN Favicons https://realfavicongenerator.net -->
+  <!-- ////////////////////////// -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=058">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=058">
+  <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png?v=058">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png?v=058">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=058">
+  <link rel="manifest" href="/site.webmanifest?v=058">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=058" color="#000000">
+  <link rel="shortcut icon" href="/favicon.ico?v=058">
+  <meta name="apple-mobile-web-app-title" content="BibleFarm.org">
+  <meta name="application-name" content="BibleFarm.org">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=058">
+  <meta name="theme-color" content="#000000">
+  <!-- ////////////////////////// -->
+  <!-- END Favicons https://realfavicongenerator.net -->
+  <!-- ////////////////////////// -->
+
+  <!-- ////////////////////////// -->
+  <!-- BEGIN Favicon-generator.org -->
+  <!-- ////////////////////////// -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png?v=058">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png?v=058">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png?v=058">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png?v=058">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png?v=058">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png?v=058">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png?v=058">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png?v=058">
+
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png?v=058">
+
+  <link rel="manifest" href="/manifest.json?v=058">
+  <!-- ////////////////////////// -->
+  <!-- END Favicon-generator.org -->
+  <!-- ////////////////////////// -->
+
+  <!-- ////////////////////////// -->
+  <!-- BEGIN http://www.favicomatic.com -->
+  <!-- ////////////////////////// -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png?v=058" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png?v=058" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png?v=058" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png?v=058" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60.png?v=058" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png?v=058" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.png?v=058" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png?v=058" />
+  <link rel="icon" type="image/png" href="/favicon-196x196.png?v=058" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png?v=058" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/favicon-32x32.png?v=058" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16x16.png?v=058" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/favicon-128.png?v=058" sizes="128x128" />
+  <meta name="application-name" content="BibleFarm.org" />
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=058" />
+  <meta name="msapplication-square70x70logo" content="/mstile-70x70.png?v=058" />
+  <meta name="msapplication-square150x150logo" content="/mstile-150x150.png?v=058" />
+  <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png?v=058" />
+  <meta name="msapplication-square310x310logo" content="/mstile-310x310.png?v=058" />
+  <!-- ////////////////////////// -->
+  <!-- END http://www.favicomatic.com -->
+  <!-- ////////////////////////// -->
+
+  <!--DONE  Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="be a part of the BibleFarm.org team">
+  <meta name="twitter:description" content="fulfilling Mat 25:31-40 one visit at a time">
+  <meta name="twitter:site" content="@biblefarm">
+  <meta name="twitter:creator" content="@biblefarm">
+  <meta name="twitter:image:src" content="https://www.biblefarm.org/images/israel/Israel_with_Daddy_0001.jpg">
+  <meta name="twitter:image:alt" content="be a part of the BibleFarm.org team">
+
+  <!-- DONE Open Graph -->
+  <meta property="og:title" content="be a part of the BibleFarm.org team" />
+  <meta property="og:description" content="fulfilling Mat 25:31-40 one visit at a time" />
+  <meta property="og:image" content="https://www.biblefarm.org/images/israel/Israel_with_Daddy_0001.jpg" />
+  <meta property="og:image:secure_url" content="https://www.biblefarm.org/images/israel/Israel_with_Daddy_0001.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://www.biblefarm.org/" />
+  <meta property="og:site_name" content="BibleFarm.org - fulfilling Mat 25:31-40 one visit at a time" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="fb:admins" content="356077414586259" />
+  <meta property="fb:app_id" content="205604789951385" />
+  <meta property="og:type" content="website" />
+  <meta name="p:domain_verify" content="e3f86f5a3fa4999b9c17c1605383d4a8" />
+
+  <!-- Pinterest  -->
+  <!-- https://css-tricks.com/using-pinterest-data-attributes-and-meta-tags/ -->
+
+  <link rel="apple-touch-startup-image" href="images/torah_farm_launch_screen_640x1136.png">
+
+  <meta name="theme-color" content="#f00">
+  <meta name="msapplication-navbutton-color" content="#f00">
+  <meta name="description" content="fulfilling Mat 25:31-40 one visit at a time">
+  <meta name="image" content="https://www.biblefarm.org/images/israel/Israel_with_Daddy_0001.jpg">
+  <meta itemprop="name" content="be a part of the BibleFarm.org team">
+  <meta itemprop="description" content="fulfilling Mat 25:31-40 one visit at a time">
+  <meta itemprop="image" content="https://www.biblefarm.org/images/israel/Israel_with_Daddy_0001.jpg">
+
+  <title>BibleFarm.org/avi</title>
+
+<style>
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: middle;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  /* *** END css reset tables ***************************************** */
+  /* ****************************************************************** */
+  @font-face {
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    src: url(fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Jura-Regular";
+    src: url(fonts/Jura-Regular.ttf) format("truetype");
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+    font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
+    font-size: calc(20px + (40 - 20) * ( (100vw - 320px) / (4096 - 320)));
+    color: #ae9c80;
+    margin: 0 auto;
+    background: black;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .special_margin_top {margin-top: 48px;}
+  .pinterest_pin_this_image {
+    display: none;
+  }
+  .wrap_gofundme_modal {
+  }
+  /* titlebar */
+  .wrap_gofundme_modal_bar {
+    position: fixed;
+    height: 50px;
+    text-align: center;
+    border: 0px solid black;
+    font-size: 20px;
+    line-height: 50px;
+    width: 100%;
+    background: black;
+  }
+  .wrap_gofundme_modal_body {
+    display: ;
+  }
+  .gofundme_flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-top: 50px;
+  }
+  .gofundme_flex-container > div {
+    background-color: #111111;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .gofundme_widget {
+    min-width: 320px;
+    max-width: 600px !important;
+  }
+  .box_shadow {
+    box-shadow: 0px 0px 60px #b3ff00;
+  }
+
+  /* /////////////////////////// */
+  /* END gofundme modal  */
+  /* /////////////////////////// */
+  .bgc-0007 {
+    background: hsl(80, 100%, 15%) !important;
+    background: -moz-radial-gradient(
+      center,
+      ellipse cover,
+      hsl(80, 100%, 15%)0%,
+      hsl(80, 100%, 15%)100%
+    ) !important;
+    background: -webkit-gradient(
+      radial,
+      center center,
+      0px,
+      center center,
+      100%,
+      color-stop(0%, hsl(80, 100%, 15%)),
+      color-stop(100%, hsl(0, 0%, 0%))
+    ) !important;
+    background: -webkit-radial-gradient(
+      center,
+      ellipse cover,
+      hsl(100, 100%, 20%) 0%,
+      hsl(0, 0%, 0%) 100%
+    ) !important;
+    background: -o-radial-gradient(
+      center,
+      ellipse cover,
+      hsl(50, 100%, 20%) 0%,
+      hsl(0, 0%, 0%) 100%
+    ) !important;
+    background: -ms-radial-gradient(
+      center,
+      ellipse cover,
+      hsl(80, 100%, 15%) 0%,
+      hsl(0, 0%, 0%) 100%
+    ) !important;
+    background: radial-gradient(
+      ellipse at center,
+      hsl(80, 100%, 15%) 0%,
+      hsl(0, 0%, 0%) 100%
+    ) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr="hsl(80,100%,15%)",
+        endColorstr="#0",
+        GradientType=1
+      ) !important;
+  }
+img.lazyloaded {
+  padding: 10px;
+  width: 100%;
+  min-witch: 300px;
+  max-width: 630px;
+}
+</style>
+
+</head>
+
+<body class="bgc-0007">
+
+  <!-- Pinterest pin this image -->
+  <img class="pinterest_pin_this_image" src="https://www.biblefarm.org/images/israel/Israel_with_Daddy_0001.jpg" data-pin-url="https://www.biblefarm.org/" data-pin-description="BibleFarm.org is a group of Bible doers donate & provide better nutrition for these kids. The team delivers clothes, shoes & we teach these children to put all their trust in Jesus (John 1:12), share (1John 3:17), apologize (Mat. 5:24) & forgive. #biblefarm">
+
+
+    <div class="wrap_gofundme_modal bgc-0007">
+      <!-- BEGIN wrap_gofundme_modal_bar -->
+      <div class="wrap_gofundme_modal_bar box_shadow">
+        <!-- BEGIN title_gofundme_modal -->
+        <div class="title_gofundme_modal box_shadow">
+          Avi and Daddy
+        </div>
+        <!-- END title_gofundme_modal -->
+      </div>
+      <!-- END wrap_gofundme_modal_bar -->
+
+      <div class="wrap_gofundme_modal_body box_shadow">
+        <div class="gofundme_flex-container">
+
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Jeremiah-29-11.png" alt="" />
+          Jeremiah 29 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-4-13.png" alt="" />
+          Philippians 4 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-41-10.png" alt="" />
+          Isaiah 41 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-28.png" alt="" />
+          Romans 8 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Joshua-1-9.png" alt="" />
+          Joshua 1 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-16.png" alt="" />
+          John 3 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-23-4.png" alt="" />
+          Psalms 23 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-1.png" alt="" />
+          John 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-12-2.png" alt="" />
+          Romans 12 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-3.png" alt="" />
+          John 3 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-23-6.png" alt="" />
+          Psalms 23 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-5-7.png" alt="" />
+          1 Peter 5 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-23-1.png" alt="" />
+          Psalms 23 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-23-5.png" alt="" />
+          Psalms 23 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-6-33.png" alt="" />
+          Matthew 6 : 33
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-23-3.png" alt="" />
+          Psalms 23 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-4-6.png" alt="" />
+          Philippians 4 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-23-2.png" alt="" />
+          Psalms 23 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-4-7.png" alt="" />
+          Philippians 4 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-6.png" alt="" />
+          John 14 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-4-8.png" alt="" />
+          Philippians 4 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Timothy-1-7.png" alt="" />
+          2 Timothy 1 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-6-12.png" alt="" />
+          Ephesians 6 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-40-31.png" alt="" />
+          Isaiah 40 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-5-17.png" alt="" />
+          2 Corinthians 5 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Proverbs-3-6.png" alt="" />
+          Proverbs 3 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-5-22.png" alt="" />
+          Galatians 5 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Proverbs-3-5.png" alt="" />
+          Proverbs 3 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-13-7.png" alt="" />
+          1 Corinthians 13 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-10-10.png" alt="" />
+          John 10 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-13-4.png" alt="" />
+          1 Corinthians 13 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-2-10.png" alt="" />
+          Ephesians 2 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-3-20.png" alt="" />
+          Ephesians 3 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-13-5.png" alt="" />
+          1 Corinthians 13 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Timothy-3-16.png" alt="" />
+          2 Timothy 3 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-28-19.png" alt="" />
+          Matthew 28 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Proverbs-22-6.png" alt="" />
+          Proverbs 22 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-5-23.png" alt="" />
+          Galatians 5 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-10-13.png" alt="" />
+          1 Corinthians 10 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-13-6.png" alt="" />
+          1 Corinthians 13 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-11-28.png" alt="" />
+          Matthew 11 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-16-33.png" alt="" />
+          John 16 : 33
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-5-8.png" alt="" />
+          Romans 5 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-28-20.png" alt="" />
+          Matthew 28 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-12-9.png" alt="" />
+          2 Corinthians 12 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-11-1.png" alt="" />
+          Hebrews 11 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-1-9.png" alt="" />
+          1 John 1 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-2-8.png" alt="" />
+          Ephesians 2 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-139-14.png" alt="" />
+          Psalms 139 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-4-12.png" alt="" />
+          Hebrews 4 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-4-19.png" alt="" />
+          Philippians 4 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-13-8.png" alt="" />
+          1 Corinthians 13 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-11.png" alt="" />
+          Psalms 91 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-1.png" alt="" />
+          Psalms 91 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-4.png" alt="" />
+          Psalms 91 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-3-23.png" alt="" />
+          Romans 3 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-27.png" alt="" />
+          John 14 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-46-10.png" alt="" />
+          Psalms 46 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-12-1.png" alt="" />
+          Romans 12 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-1-27.png" alt="" />
+          Genesis 1 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-53-5.png" alt="" />
+          Isaiah 53 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-2-20.png" alt="" />
+          Galatians 2 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-13-13.png" alt="" />
+          1 Corinthians 13 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-3-23.png" alt="" />
+          Colossians 3 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-2.png" alt="" />
+          Psalms 91 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-1-3.png" alt="" />
+          Psalms 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Chronicles-7-14.png" alt="" />
+          2 Chronicles 7 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-10-9.png" alt="" />
+          Romans 10 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-54-17.png" alt="" />
+          Isaiah 54 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-1-8.png" alt="" />
+          Acts 1 : 8
+          1 Thessalonians 5:18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-2-9.png" alt="" />
+          1 Peter 2 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Proverbs-4-23.png" alt="" />
+          Proverbs 4 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-15.png" alt="" />
+          Psalms 91 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-12.png" alt="" />
+          Psalms 91 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-4-32.png" alt="" />
+          Ephesians 4 : 32
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-10-5.png" alt="" />
+          2 Corinthians 10 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-12-2.png" alt="" />
+          Hebrews 12 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-7.png" alt="" />
+          Psalms 91 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-16.png" alt="" />
+          Matthew 5 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-1-1.png" alt="" />
+          Psalms 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-6-9.png" alt="" />
+          Galatians 6 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-9-6.png" alt="" />
+          Isaiah 9 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-16.png" alt="" />
+          Psalms 91 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-9.png" alt="" />
+          Psalms 91 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-15-13.png" alt="" />
+          John 15 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-3.png" alt="" />
+          Psalms 91 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-14.png" alt="" />
+          Psalms 91 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-5.png" alt="" />
+          Psalms 91 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-6-23.png" alt="" />
+          Romans 6 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-8.png" alt="" />
+          Psalms 91 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-10.png" alt="" />
+          Psalms 91 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-37-4.png" alt="" />
+          Psalms 37 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-6.png" alt="" />
+          Psalms 91 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-1-2.png" alt="" />
+          Psalms 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-1-26.png" alt="" />
+          Genesis 1 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-91-13.png" alt="" />
+          Psalms 91 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-1-6.png" alt="" />
+          Philippians 1 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-5-8.png" alt="" />
+          1 Peter 5 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-39.png" alt="" />
+          Romans 8 : 39
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-5-16.png" alt="" />
+          James 5 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-11-29.png" alt="" />
+          Matthew 11 : 29
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-1-1.png" alt="" />
+          Genesis 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-38.png" alt="" />
+          Acts 2 : 38
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-12.png" alt="" />
+          John 1 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-9.png" alt="" />
+          John 1 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-28-18.png" alt="" />
+          Matthew 28 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-16-15.png" alt="" />
+          Mark 16 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-14.png" alt="" />
+          John 1 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-4-12.png" alt="" />
+          Acts 4 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-42.png" alt="" />
+          Acts 2 : 42
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-1.png" alt="" />
+          John 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-1.png" alt="" />
+          John 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Titus-3-5.png" alt="" />
+          Titus 3 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-1.png" alt="" />
+          John 14 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-1.png" alt="" />
+          John 4 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-4-11.png" alt="" />
+          Ephesians 4 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-5-12.png" alt="" />
+          Romans 5 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-5-1.png" alt="" />
+          Romans 5 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-16.png" alt="" />
+          Romans 1 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-1.png" alt="" />
+          Acts 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Timothy-2-15.png" alt="" />
+          2 Timothy 2 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-1.png" alt="" />
+          Romans 8 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-10-13.png" alt="" />
+          Romans 10 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-8-32.png" alt="" />
+          John 8 : 32
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-15.png" alt="" />
+          John 14 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Deuteronomy-6-4.png" alt="" />
+          Deuteronomy 6 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-13-34.png" alt="" />
+          John 13 : 34
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-24.png" alt="" />
+          John 4 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-2-1.png" alt="" />
+          Ephesians 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-16.png" alt="" />
+          John 14 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-1-2.png" alt="" />
+          Genesis 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-7-14.png" alt="" />
+          Isaiah 7 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-7.png" alt="" />
+          John 1 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-5.png" alt="" />
+          John 3 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-2-5.png" alt="" />
+          Philippians 2 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-29.png" alt="" />
+          John 1 : 29
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-18.png" alt="" />
+          Romans 1 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-12-1.png" alt="" />
+          Hebrews 12 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-3.png" alt="" />
+          John 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-16-18.png" alt="" />
+          Matthew 16 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-17-11.png" alt="" />
+          Acts 17 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-25-31.png" alt="" />
+          Matthew 25 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-17.png" alt="" />
+          Matthew 5 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-10-17.png" alt="" />
+          Romans 10 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-4-18.png" alt="" />
+          Luke 4 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-16-13.png" alt="" />
+          John 16 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-20-28.png" alt="" />
+          Acts 20 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Titus-2-11.png" alt="" />
+          Titus 2 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-8-44.png" alt="" />
+          John 8 : 44
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-6-10.png" alt="" />
+          Ephesians 6 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-13-1.png" alt="" />
+          Romans 13 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-15.png" alt="" />
+          John 2 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-16-16.png" alt="" />
+          Mark 16 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-3-10.png" alt="" />
+          Romans 3 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-3-15.png" alt="" />
+          Genesis 3 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-11-6.png" alt="" />
+          Hebrews 11 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-26.png" alt="" />
+          John 14 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-24.png" alt="" />
+          John 5 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Joel-2-28.png" alt="" />
+          Joel 2 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-1-11.png" alt="" />
+          Genesis 1 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-2.png" alt="" />
+          James 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-1-15.png" alt="" />
+          Colossians 1 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-22-37.png" alt="" />
+          Matthew 22 : 37
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Titus-2-13.png" alt="" />
+          Titus 2 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-1-9.png" alt="" />
+          Acts 1 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-7.png" alt="" />
+          John 4 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Micah-6-8.png" alt="" />
+          Micah 6 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-17-17.png" alt="" />
+          John 17 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Leviticus-18-22.png" alt="" />
+          Leviticus 18 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-20-7.png" alt="" />
+          Acts 20 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-16-31.png" alt="" />
+          Acts 16 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-11-25.png" alt="" />
+          John 11 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-8-58.png" alt="" />
+          John 8 : 58
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-4.png" alt="" />
+          Acts 2 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-15-5.png" alt="" />
+          John 15 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-41.png" alt="" />
+          Acts 2 : 41
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-3-1.png" alt="" />
+          Genesis 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-5.png" alt="" />
+          James 1 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-1-1.png" alt="" />
+          Hebrews 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-John-1-2.png" alt="" />
+          2 John 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-17-3.png" alt="" />
+          John 17 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-16-19.png" alt="" />
+          Luke 16 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-7.png" alt="" />
+          John 5 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-8-31.png" alt="" />
+          John 8 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-4.png" alt="" />
+          Luke 1 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-3-20.png" alt="" />
+          Revelation 3 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-2-3.png" alt="" />
+          1 Peter 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-10-30.png" alt="" />
+          John 10 : 30
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-3-15.png" alt="" />
+          1 Peter 3 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-7-21.png" alt="" />
+          Matthew 7 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-18.png" alt="" />
+          John 3 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-12-1.png" alt="" />
+          Genesis 12 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-8.png" alt="" />
+          John 3 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-15-1.png" alt="" />
+          John 15 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-2-7.png" alt="" />
+          Genesis 2 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-1-3.png" alt="" />
+          Genesis 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-8-12.png" alt="" />
+          John 8 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-26.png" alt="" />
+          Luke 1 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-9-27.png" alt="" />
+          Hebrews 9 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-2.png" alt="" />
+          John 3 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-14.png" alt="" />
+          Matthew 5 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-3-14.png" alt="" />
+          Exodus 3 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-6-9.png" alt="" />
+          1 Corinthians 6 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-10-25.png" alt="" />
+          Luke 10 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-7-7.png" alt="" />
+          Matthew 7 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-8.png" alt="" />
+          John 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-1-3.png" alt="" />
+          Ephesians 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-1-18.png" alt="" />
+          Matthew 1 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-20.png" alt="" />
+          Romans 1 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-8-9.png" alt="" />
+          John 8 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-5.png" alt="" />
+          John 1 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Thessalonians-4-13.png" alt="" />
+          1 Thessalonians 4 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-13-5.png" alt="" />
+          Hebrews 13 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-4-1.png" alt="" />
+          1 John 4 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-17.png" alt="" />
+          James 1 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-6-19.png" alt="" />
+          Matthew 6 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-61-1.png" alt="" />
+          Isaiah 61 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-3-28.png" alt="" />
+          Galatians 3 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-3-9.png" alt="" />
+          2 Peter 3 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-1-11.png" alt="" />
+          Acts 1 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-5-14.png" alt="" />
+          James 5 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-36.png" alt="" />
+          John 3 : 36
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-6-9.png" alt="" />
+          Matthew 6 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-3-19.png" alt="" />
+          Acts 3 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-2-14.png" alt="" />
+          James 2 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-17.png" alt="" />
+          John 3 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-35.png" alt="" />
+          Luke 1 : 35
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-1-28.png" alt="" />
+          Genesis 1 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-5-21.png" alt="" />
+          2 Corinthians 5 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-6-1.png" alt="" />
+          Romans 6 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-1-13.png" alt="" />
+          Ephesians 1 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-6-3.png" alt="" />
+          Romans 6 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-18-15.png" alt="" />
+          Matthew 18 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-4-5.png" alt="" />
+          1 John 4 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-2-1.png" alt="" />
+          Luke 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-27.png" alt="" />
+          James 1 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-28.png" alt="" />
+          John 5 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-39.png" alt="" />
+          John 5 : 39
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Titus-2-3.png" alt="" />
+          Titus 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-23.png" alt="" />
+          John 4 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-7-1.png" alt="" />
+          Matthew 7 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Timothy-2-5.png" alt="" />
+          1 Timothy 2 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-4-1.png" alt="" />
+          Matthew 4 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-18.png" alt="" />
+          John 1 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-4-1.png" alt="" />
+          Ephesians 4 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-1.png" alt="" />
+          John 5 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-5-18.png" alt="" />
+          Ephesians 5 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-5-22.png" alt="" />
+          Ephesians 5 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-21-1.png" alt="" />
+          Revelation 21 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Micah-5-2.png" alt="" />
+          Micah 5 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-3-4.png" alt="" />
+          2 Peter 3 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-6-44.png" alt="" />
+          John 6 : 44
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-20-19.png" alt="" />
+          John 20 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-119-105.png" alt="" />
+          Psalms 119 : 105
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-2-18.png" alt="" />
+          Genesis 2 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-1-7.png" alt="" />
+          1 John 1 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-15-3.png" alt="" />
+          1 Corinthians 15 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-1-7.png" alt="" />
+          Ephesians 1 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-5-25.png" alt="" />
+          Ephesians 5 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-9.png" alt="" />
+          Romans 8 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-5-16.png" alt="" />
+          Galatians 5 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-14.png" alt="" />
+          John 3 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-4.png" alt="" />
+          John 3 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-15-11.png" alt="" />
+          Luke 15 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-7-13.png" alt="" />
+          Matthew 7 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-22.png" alt="" />
+          James 1 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-2-24.png" alt="" />
+          Genesis 2 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-10-27.png" alt="" />
+          John 10 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-1-16.png" alt="" />
+          Colossians 1 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-3-1.png" alt="" />
+          Colossians 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-17-30.png" alt="" />
+          Acts 17 : 30
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-16-7.png" alt="" />
+          John 16 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-3-18.png" alt="" />
+          1 Peter 3 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-10-25.png" alt="" />
+          Hebrews 10 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-2.png" alt="" />
+          John 2 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-7-8.png" alt="" />
+          Matthew 7 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-13.png" alt="" />
+          Matthew 5 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-4-7.png" alt="" />
+          James 4 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-10-11.png" alt="" />
+          John 10 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-8.png" alt="" />
+          John 4 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-2-24.png" alt="" />
+          1 Peter 2 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-6-37.png" alt="" />
+          John 6 : 37
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-6-1.png" alt="" />
+          Acts 6 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-26.png" alt="" />
+          Romans 8 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-20-1.png" alt="" />
+          John 20 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-6-7.png" alt="" />
+          John 6 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-14-1.png" alt="" />
+          Luke 14 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-29.png" alt="" />
+          Romans 8 : 29
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-19.png" alt="" />
+          John 5 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Jeremiah-17-9.png" alt="" />
+          Jeremiah 17 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-4-7.png" alt="" />
+          1 John 4 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-1-5.png" alt="" />
+          Exodus 1 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-2-15.png" alt="" />
+          1 John 2 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-1-20.png" alt="" />
+          2 Peter 1 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-3-12.png" alt="" />
+          Colossians 3 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-15-26.png" alt="" />
+          John 15 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-17-20.png" alt="" />
+          John 17 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-3-1.png" alt="" />
+          1 John 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-10-34.png" alt="" />
+          Acts 10 : 34
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-4-16.png" alt="" />
+          Luke 4 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-2-1.png" alt="" />
+          Matthew 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Titus-1-5.png" alt="" />
+          Titus 1 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-17-10.png" alt="" />
+          Acts 17 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-9-23.png" alt="" />
+          Luke 9 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-3-26.png" alt="" />
+          Galatians 3 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-2-1.png" alt="" />
+          1 John 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-1-2.png" alt="" />
+          2 Corinthians 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-5-7.png" alt="" />
+          1 John 5 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-4-15.png" alt="" />
+          Hebrews 4 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-1-3.png" alt="" />
+          Hebrews 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-1-1.png" alt="" />
+          Acts 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-5-1.png" alt="" />
+          Galatians 5 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-10.png" alt="" />
+          John 4 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-14.png" alt="" />
+          John 5 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-2-3.png" alt="" />
+          Luke 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-14-12.png" alt="" />
+          Isaiah 14 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-13-8.png" alt="" />
+          Hebrews 13 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-3-4.png" alt="" />
+          Galatians 3 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-3-16.png" alt="" />
+          Colossians 3 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-7-37.png" alt="" />
+          John 7 : 37
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Joshua-24-15.png" alt="" />
+          Joshua 24 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-14.png" alt="" />
+          Romans 8 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Chronicles-1-2.png" alt="" />
+          2 Chronicles 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-11-1.png" alt="" />
+          Luke 11 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-10-38.png" alt="" />
+          Luke 10 : 38
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-31.png" alt="" />
+          Romans 8 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-13-1.png" alt="" />
+          John 13 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-4.png" alt="" />
+          John 1 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-2-12.png" alt="" />
+          Philippians 2 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-14-25.png" alt="" />
+          Luke 14 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-23.png" alt="" />
+          John 14 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-16-8.png" alt="" />
+          John 16 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-1-21.png" alt="" />
+          2 Peter 1 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-1-8.png" alt="" />
+          1 John 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-18-1.png" alt="" />
+          Luke 18 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-2-3.png" alt="" />
+          James 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-7-15.png" alt="" />
+          Matthew 7 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-19.png" alt="" />
+          John 2 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-20-8.png" alt="" />
+          Exodus 20 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-10-24.png" alt="" />
+          Hebrews 10 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-2-1.png" alt="" />
+          Philippians 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-2.png" alt="" />
+          John 14 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-6-7.png" alt="" />
+          Galatians 6 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-6-4.png" alt="" />
+          Romans 6 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-7.png" alt="" />
+          Matthew 5 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-5-19.png" alt="" />
+          Galatians 5 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-18.png" alt="" />
+          John 2 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-1-3.png" alt="" />
+          1 Peter 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-38.png" alt="" />
+          Romans 8 : 38
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-6-35.png" alt="" />
+          John 6 : 35
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-9-1.png" alt="" />
+          Acts 9 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Jude-1-2.png" alt="" />
+          Jude 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-1-4.png" alt="" />
+          Ephesians 1 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-21-15.png" alt="" />
+          John 21 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-13.png" alt="" />
+          John 5 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-6-14.png" alt="" />
+          2 Corinthians 6 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-6-25.png" alt="" />
+          Matthew 6 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-6.png" alt="" />
+          Romans 1 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-53-4.png" alt="" />
+          Isaiah 53 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Chronicles-1-2.png" alt="" />
+          1 Chronicles 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-1-22.png" alt="" />
+          Ephesians 1 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-1-21.png" alt="" />
+          Matthew 1 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-1-1.png" alt="" />
+          1 John 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-4-4.png" alt="" />
+          Galatians 4 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-20-1.png" alt="" />
+          Exodus 20 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-4.png" alt="" />
+          John 4 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-16-17.png" alt="" />
+          John 16 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-11.png" alt="" />
+          John 5 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-4-1.png" alt="" />
+          Luke 4 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-22.png" alt="" />
+          Acts 2 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-1.png" alt="" />
+          Luke 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-18.png" alt="" />
+          Romans 8 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-17-26.png" alt="" />
+          Acts 17 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-20-21.png" alt="" />
+          John 20 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-1.png" alt="" />
+          Matthew 5 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-3.png" alt="" />
+          Matthew 5 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-1-3.png" alt="" />
+          Matthew 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-1-13.png" alt="" />
+          Colossians 1 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-10-1.png" alt="" />
+          Luke 10 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-7-36.png" alt="" />
+          Luke 7 : 36
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-7.png" alt="" />
+          Luke 1 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-6-1.png" alt="" />
+          Isaiah 6 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-20-11.png" alt="" />
+          Revelation 20 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-26.png" alt="" />
+          Romans 1 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-1-15.png" alt="" />
+          Mark 1 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Leviticus-20-13.png" alt="" />
+          Leviticus 20 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-5-21.png" alt="" />
+          Ephesians 5 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-6-19.png" alt="" />
+          1 Corinthians 6 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-16.png" alt="" />
+          John 4 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-19-10.png" alt="" />
+          Luke 19 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-24-1.png" alt="" />
+          Luke 24 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-4-14.png" alt="" />
+          Hebrews 4 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-3-2.png" alt="" />
+          1 John 3 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-15-1.png" alt="" />
+          1 Corinthians 15 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-12.png" alt="" />
+          John 14 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-1-14.png" alt="" />
+          Mark 1 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Timothy-3-1.png" alt="" />
+          2 Timothy 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-15-16.png" alt="" />
+          John 15 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-20-3.png" alt="" />
+          Exodus 20 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-37.png" alt="" />
+          Acts 2 : 37
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-23-34.png" alt="" />
+          Luke 23 : 34
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-7-12.png" alt="" />
+          Matthew 7 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-6-24.png" alt="" />
+          Matthew 6 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-6-1.png" alt="" />
+          Matthew 6 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-1-1.png" alt="" />
+          Mark 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Jeremiah-31-31.png" alt="" />
+          Jeremiah 31 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-5-6.png" alt="" />
+          James 5 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-18-20.png" alt="" />
+          Matthew 18 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Daniel-9-24.png" alt="" />
+          Daniel 9 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-4-6.png" alt="" />
+          James 4 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-16-17.png" alt="" />
+          Mark 16 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-19-11.png" alt="" />
+          Revelation 19 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-19-1.png" alt="" />
+          Psalms 19 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-6.png" alt="" />
+          John 1 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-6-27.png" alt="" />
+          Luke 6 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-24-14.png" alt="" />
+          Matthew 24 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-4-4.png" alt="" />
+          Matthew 4 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Timothy-3-15.png" alt="" />
+          2 Timothy 3 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-5-3.png" alt="" />
+          Acts 5 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-44.png" alt="" />
+          Matthew 5 : 44
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-2-9.png" alt="" />
+          Colossians 2 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-2-8.png" alt="" />
+          Colossians 2 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-6-1.png" alt="" />
+          Galatians 6 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-11.png" alt="" />
+          John 1 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-12-14.png" alt="" />
+          Hebrews 12 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-19.png" alt="" />
+          John 3 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-12-30.png" alt="" />
+          Mark 12 : 30
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Daniel-9-27.png" alt="" />
+          Daniel 9 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ecclesiastes-3-1.png" alt="" />
+          Ecclesiastes 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-17.png" alt="" />
+          Acts 2 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-1-4.png" alt="" />
+          Acts 1 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-10.png" alt="" />
+          Luke 1 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-2-6.png" alt="" />
+          Philippians 2 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-1-23.png" alt="" />
+          Matthew 1 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-4-4.png" alt="" />
+          Philippians 4 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-12-14.png" alt="" />
+          Luke 12 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-6-38.png" alt="" />
+          Luke 6 : 38
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-3-21.png" alt="" />
+          Romans 3 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-13-35.png" alt="" />
+          John 13 : 35
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-15-4.png" alt="" />
+          Romans 15 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-4-8.png" alt="" />
+          1 John 4 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-2-2.png" alt="" />
+          1 John 2 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-4-4.png" alt="" />
+          James 4 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Thessalonians-4-16.png" alt="" />
+          1 Thessalonians 4 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-1-18.png" alt="" />
+          1 Corinthians 1 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-15-12.png" alt="" />
+          John 15 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-8.png" alt="" />
+          Luke 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Timothy-1-2.png" alt="" />
+          2 Timothy 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-13-1.png" alt="" />
+          1 Corinthians 13 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Job-1-6.png" alt="" />
+          Job 1 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-13.png" alt="" />
+          James 1 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Timothy-4-1.png" alt="" />
+          1 Timothy 4 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-2-19.png" alt="" />
+          Ephesians 2 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-13-1.png" alt="" />
+          Acts 13 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-10-28.png" alt="" />
+          John 10 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-19.png" alt="" />
+          James 1 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-1-6.png" alt="" />
+          Galatians 1 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-10-38.png" alt="" />
+          Acts 10 : 38
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-1-4.png" alt="" />
+          Matthew 1 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-1-3.png" alt="" />
+          2 Peter 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-11-12.png" alt="" />
+          Hebrews 11 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-8-26.png" alt="" />
+          Acts 8 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-22-19.png" alt="" />
+          Luke 22 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-5-1.png" alt="" />
+          Luke 5 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-1-18.png" alt="" />
+          Colossians 1 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-3.png" alt="" />
+          John 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-12-12.png" alt="" />
+          1 Corinthians 12 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-5-29.png" alt="" />
+          Acts 5 : 29
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-13-3.png" alt="" />
+          Luke 13 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-25-41.png" alt="" />
+          Matthew 25 : 41
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-1-1.png" alt="" />
+          Matthew 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-17-21.png" alt="" />
+          John 17 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-4.png" alt="" />
+          John 5 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-5-13.png" alt="" />
+          James 5 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-12.png" alt="" />
+          James 1 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-5-6.png" alt="" />
+          Romans 5 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-19.png" alt="" />
+          John 4 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-25-14.png" alt="" />
+          Matthew 25 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-2-19.png" alt="" />
+          James 2 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-1-6.png" alt="" />
+          Acts 1 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-18-9.png" alt="" />
+          Luke 18 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-13-10.png" alt="" />
+          Luke 13 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-64-6.png" alt="" />
+          Isaiah 64 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-6-7.png" alt="" />
+          Luke 6 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-1-31.png" alt="" />
+          Genesis 1 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-4-32.png" alt="" />
+          Acts 4 : 32
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-36.png" alt="" />
+          Acts 2 : 36
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-24-44.png" alt="" />
+          Luke 24 : 44
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-12.png" alt="" />
+          Luke 1 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-21-8.png" alt="" />
+          Revelation 21 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-2-1.png" alt="" />
+          2 Peter 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-7.png" alt="" />
+          James 1 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-7-25.png" alt="" />
+          Hebrews 7 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-12-29.png" alt="" />
+          Mark 12 : 29
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-18-36.png" alt="" />
+          John 18 : 36
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-14-26.png" alt="" />
+          Luke 14 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-12-3.png" alt="" />
+          Romans 12 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-15-7.png" alt="" />
+          John 15 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-16-9.png" alt="" />
+          Mark 16 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-28-1.png" alt="" />
+          Matthew 28 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-9.png" alt="" />
+          John 14 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-18.png" alt="" />
+          John 4 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-10-45.png" alt="" />
+          Mark 10 : 45
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-3-1.png" alt="" />
+          James 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-5-1.png" alt="" />
+          Acts 5 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-6-8.png" alt="" />
+          John 6 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Leviticus-19-18.png" alt="" />
+          Leviticus 19 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-19-30.png" alt="" />
+          John 19 : 30
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-16-1.png" alt="" />
+          Mark 16 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-1-5.png" alt="" />
+          1 John 1 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-24-13.png" alt="" />
+          Luke 24 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-48.png" alt="" />
+          Matthew 5 : 48
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-3-20.png" alt="" />
+          Philippians 3 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-6.png" alt="" />
+          John 3 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-10-34.png" alt="" />
+          Matthew 10 : 34
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hosea-4-6.png" alt="" />
+          Hosea 4 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-53-6.png" alt="" />
+          Isaiah 53 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-11.png" alt="" />
+          James 1 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-17-28.png" alt="" />
+          Acts 17 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-4-10.png" alt="" />
+          1 Peter 4 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-3-5.png" alt="" />
+          1 Peter 3 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Thessalonians-2-3.png" alt="" />
+          1 Thessalonians 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-2-3.png" alt="" />
+          Philippians 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-6-1.png" alt="" />
+          Ephesians 6 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-2.png" alt="" />
+          John 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-12-28.png" alt="" />
+          Mark 12 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-55-8.png" alt="" />
+          Isaiah 55 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-27.png" alt="" />
+          Matthew 5 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-22-18.png" alt="" />
+          Revelation 22 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-1-6.png" alt="" />
+          Colossians 1 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Timothy-2-1.png" alt="" />
+          1 Timothy 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-3.png" alt="" />
+          Romans 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-5-6.png" alt="" />
+          Acts 5 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-6-63.png" alt="" />
+          John 6 : 63
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-51-1.png" alt="" />
+          Isaiah 51 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-6-4.png" alt="" />
+          Ephesians 6 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-3-13.png" alt="" />
+          Galatians 3 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Malachi-3-10.png" alt="" />
+          Malachi 3 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-3-16.png" alt="" />
+          Genesis 3 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-1-2.png" alt="" />
+          1 Peter 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-15-50.png" alt="" />
+          1 Corinthians 15 : 50
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-9-1.png" alt="" />
+          John 9 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-23-43.png" alt="" />
+          Luke 23 : 43
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Joel-2-3.png" alt="" />
+          Joel 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-2-14.png" alt="" />
+          Hebrews 2 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-25-40.png" alt="" />
+          Matthew 25 : 40
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-139-13.png" alt="" />
+          Psalms 139 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-12-3.png" alt="" />
+          Genesis 12 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-1-29.png" alt="" />
+          Genesis 1 : 29
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-1-6.png" alt="" />
+          2 Peter 1 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-10-1.png" alt="" />
+          John 10 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Daniel-7-13.png" alt="" />
+          Daniel 7 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-1.png" alt="" />
+          Romans 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-20-13.png" alt="" />
+          Exodus 20 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-11-23.png" alt="" />
+          1 Corinthians 11 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-14.png" alt="" />
+          John 4 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-19-1.png" alt="" />
+          Acts 19 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-7-24.png" alt="" />
+          Matthew 7 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-7-9.png" alt="" />
+          Revelation 7 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-16.png" alt="" />
+          Romans 8 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Timothy-3-1.png" alt="" />
+          1 Timothy 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-3-24.png" alt="" />
+          Romans 3 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-9.png" alt="" />
+          Matthew 5 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-1-18.png" alt="" />
+          Isaiah 1 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-13-4.png" alt="" />
+          Hebrews 13 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-6-5.png" alt="" />
+          Matthew 6 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-43.png" alt="" />
+          Matthew 5 : 43
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Proverbs-1-7.png" alt="" />
+          Proverbs 1 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-20-12.png" alt="" />
+          Exodus 20 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-1-8.png" alt="" />
+          Genesis 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-1-11.png" alt="" />
+          2 Peter 1 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-10-31.png" alt="" />
+          1 Corinthians 10 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Daniel-12-1.png" alt="" />
+          Daniel 12 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-3-14.png" alt="" />
+          Ephesians 3 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-5-13.png" alt="" />
+          Galatians 5 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-2-3.png" alt="" />
+          Romans 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-16-30.png" alt="" />
+          Acts 16 : 30
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-1-3.png" alt="" />
+          Isaiah 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-12-9.png" alt="" />
+          Revelation 12 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-13.png" alt="" />
+          John 3 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Joshua-1-8.png" alt="" />
+          Joshua 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-20-4.png" alt="" />
+          Revelation 20 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-5-1.png" alt="" />
+          Ephesians 5 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-12-9.png" alt="" />
+          Romans 12 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-9.png" alt="" />
+          Luke 1 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-2-1.png" alt="" />
+          Mark 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-4-5.png" alt="" />
+          Hebrews 4 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-9-11.png" alt="" />
+          Romans 9 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-11-26.png" alt="" />
+          Acts 11 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-16-13.png" alt="" />
+          Matthew 16 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-20-31.png" alt="" />
+          John 20 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-12-13.png" alt="" />
+          Luke 12 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-1-18.png" alt="" />
+          1 Peter 1 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-6-18.png" alt="" />
+          Ephesians 6 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-18-21.png" alt="" />
+          Matthew 18 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-3-16.png" alt="" />
+          Matthew 3 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Proverbs-31-10.png" alt="" />
+          Proverbs 31 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-11-1.png" alt="" />
+          John 11 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Malachi-3-6.png" alt="" />
+          Malachi 3 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-9.png" alt="" />
+          John 4 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-2-15.png" alt="" />
+          Genesis 2 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-20-1.png" alt="" />
+          Revelation 20 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-3-1.png" alt="" />
+          1 Peter 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-15.png" alt="" />
+          John 3 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-40-3.png" alt="" />
+          Isaiah 40 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Proverbs-14-12.png" alt="" />
+          Proverbs 14 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-6-5.png" alt="" />
+          Genesis 6 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-2-10.png" alt="" />
+          James 2 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-2-12.png" alt="" />
+          Colossians 2 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-1-28.png" alt="" />
+          Colossians 1 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-26-26.png" alt="" />
+          Matthew 26 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-3-12.png" alt="" />
+          Isaiah 3 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-3-4.png" alt="" />
+          1 John 3 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-10.png" alt="" />
+          James 1 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-3-4.png" alt="" />
+          Ephesians 3 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-21.png" alt="" />
+          John 14 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-7.png" alt="" />
+          John 3 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-16-24.png" alt="" />
+          Matthew 16 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-5-3.png" alt="" />
+          Romans 5 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-12-32.png" alt="" />
+          Luke 12 : 32
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-2-1.png" alt="" />
+          James 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-15-1.png" alt="" />
+          Acts 15 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-10.png" alt="" />
+          John 1 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-9-43.png" alt="" />
+          Mark 9 : 43
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Titus-1-2.png" alt="" />
+          Titus 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-10.png" alt="" />
+          Romans 1 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-10-14.png" alt="" />
+          Romans 10 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-22-16.png" alt="" />
+          Acts 22 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-15-1.png" alt="" />
+          Luke 15 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-11-24.png" alt="" />
+          Mark 11 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-10-17.png" alt="" />
+          Mark 10 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Deuteronomy-6-5.png" alt="" />
+          Deuteronomy 6 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-3-4.png" alt="" />
+          Revelation 3 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-4-30.png" alt="" />
+          Ephesians 4 : 30
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-10-11.png" alt="" />
+          Luke 10 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-1-21.png" alt="" />
+          Philippians 1 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-4-4.png" alt="" />
+          Ephesians 4 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-19-1.png" alt="" />
+          Luke 19 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-1-1.png" alt="" />
+          Philippians 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-11-12.png" alt="" />
+          Luke 11 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-5-11.png" alt="" />
+          1 John 5 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-4-4.png" alt="" />
+          2 Corinthians 4 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-5-13.png" alt="" />
+          1 John 5 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-1-8.png" alt="" />
+          Ephesians 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-8-34.png" alt="" />
+          Mark 8 : 34
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-28-16.png" alt="" />
+          Matthew 28 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-11-1.png" alt="" />
+          Isaiah 11 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-22-1.png" alt="" />
+          Genesis 22 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-11-1.png" alt="" />
+          Genesis 11 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-25-1.png" alt="" />
+          Matthew 25 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-14-6.png" alt="" />
+          Revelation 14 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-17-24.png" alt="" />
+          Acts 17 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-16-17.png" alt="" />
+          Acts 16 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-1-9.png" alt="" />
+          Mark 1 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-43-10.png" alt="" />
+          Isaiah 43 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-2-21.png" alt="" />
+          1 Peter 2 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-2-16.png" alt="" />
+          Colossians 2 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-4-15.png" alt="" />
+          Ephesians 4 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-3-4.png" alt="" />
+          1 Corinthians 3 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-1-3.png" alt="" />
+          Acts 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-1-7.png" alt="" />
+          Revelation 1 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-5-1.png" alt="" />
+          1 Peter 5 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-3-5.png" alt="" />
+          Colossians 3 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-3-18.png" alt="" />
+          2 Corinthians 3 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-2-4.png" alt="" />
+          Ephesians 2 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-17.png" alt="" />
+          Romans 1 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-4-1.png" alt="" />
+          Genesis 4 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-47.png" alt="" />
+          Acts 2 : 47
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-16-12.png" alt="" />
+          John 16 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-3-23.png" alt="" />
+          Luke 3 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-10-28.png" alt="" />
+          Matthew 10 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-1-9.png" alt="" />
+          Colossians 1 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-1-8.png" alt="" />
+          Colossians 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-1-11.png" alt="" />
+          Ephesians 1 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-12.png" alt="" />
+          Romans 1 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-46.png" alt="" />
+          Luke 1 : 46
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-20-10.png" alt="" />
+          Revelation 20 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-5-14.png" alt="" />
+          1 John 5 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-15.png" alt="" />
+          Romans 8 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-3-11.png" alt="" />
+          Matthew 3 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-55-1.png" alt="" />
+          Isaiah 55 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-21-4.png" alt="" />
+          Revelation 21 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-1-23.png" alt="" />
+          1 Peter 1 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Timothy-3-16.png" alt="" />
+          1 Timothy 3 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-20-28.png" alt="" />
+          John 20 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-13-1.png" alt="" />
+          Luke 13 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-10-27.png" alt="" />
+          Luke 10 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-24-36.png" alt="" />
+          Matthew 24 : 36
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-6-1.png" alt="" />
+          Genesis 6 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Timothy-1-13.png" alt="" />
+          2 Timothy 1 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-20-17.png" alt="" />
+          John 20 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-17-1.png" alt="" />
+          John 17 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-21.png" alt="" />
+          Matthew 5 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Malachi-3-1.png" alt="" />
+          Malachi 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Jeremiah-2-4.png" alt="" />
+          Jeremiah 2 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-1-7.png" alt="" />
+          2 Peter 1 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-35.png" alt="" />
+          Romans 8 : 35
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-24-49.png" alt="" />
+          Luke 24 : 49
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-2-18.png" alt="" />
+          1 John 2 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-4-1.png" alt="" />
+          James 4 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-3-17.png" alt="" />
+          Colossians 3 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-2-9.png" alt="" />
+          Philippians 2 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-4-29.png" alt="" />
+          Ephesians 4 : 29
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-44.png" alt="" />
+          Acts 2 : 44
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-14.png" alt="" />
+          Luke 1 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-24-15.png" alt="" />
+          Matthew 24 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-38.png" alt="" />
+          Matthew 5 : 38
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-1-7.png" alt="" />
+          Colossians 1 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-2-11.png" alt="" />
+          Ephesians 2 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-21-1.png" alt="" />
+          John 21 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-3.png" alt="" />
+          John 5 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Malachi-3-4.png" alt="" />
+          Malachi 3 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Jeremiah-1-4.png" alt="" />
+          Jeremiah 1 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-4-16.png" alt="" />
+          1 John 4 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-3-18.png" alt="" />
+          2 Peter 3 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-4-8.png" alt="" />
+          James 4 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-1-1.png" alt="" />
+          James 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-1-3.png" alt="" />
+          2 Corinthians 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-20-35.png" alt="" />
+          Acts 20 : 35
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-18.png" alt="" />
+          John 5 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-9-10.png" alt="" />
+          Mark 9 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Timothy-4-1.png" alt="" />
+          2 Timothy 4 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-24-47.png" alt="" />
+          Luke 24 : 47
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-18.png" alt="" />
+          Matthew 5 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-13-14.png" alt="" />
+          2 Corinthians 13 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-2-4.png" alt="" />
+          Genesis 2 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-3-10.png" alt="" />
+          2 Peter 3 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-13.png" alt="" />
+          John 2 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Jeremiah-33-3.png" alt="" />
+          Jeremiah 33 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Thessalonians-5-6.png" alt="" />
+          1 Thessalonians 5 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-3-1.png" alt="" />
+          Luke 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-7-26.png" alt="" />
+          Matthew 7 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-6-9.png" alt="" />
+          Genesis 6 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-1-19.png" alt="" />
+          2 Peter 1 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-1-8.png" alt="" />
+          Galatians 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-2-3.png" alt="" />
+          1 Corinthians 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-2-8.png" alt="" />
+          Luke 2 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Amos-4-1.png" alt="" />
+          Amos 4 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-5-15.png" alt="" />
+          Ephesians 5 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-9.png" alt="" />
+          Romans 1 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-6.png" alt="" />
+          Matthew 5 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-20-4.png" alt="" />
+          Exodus 20 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-2-17.png" alt="" />
+          Genesis 2 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-1-8.png" alt="" />
+          2 Peter 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-10-19.png" alt="" />
+          Hebrews 10 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Timothy-4-3.png" alt="" />
+          2 Timothy 4 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-2-3.png" alt="" />
+          Galatians 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-3-4.png" alt="" />
+          2 Corinthians 3 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-14.png" alt="" />
+          Acts 2 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-1-5.png" alt="" />
+          Acts 1 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-17.png" alt="" />
+          John 14 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-8-36.png" alt="" />
+          John 8 : 36
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-26-3.png" alt="" />
+          Isaiah 26 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-1-4.png" alt="" />
+          2 Peter 1 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-5-10.png" alt="" />
+          2 Corinthians 5 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-4-12.png" alt="" />
+          Ephesians 4 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-13-8.png" alt="" />
+          Romans 13 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-103-1.png" alt="" />
+          Psalms 103 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Timothy-4-12.png" alt="" />
+          1 Timothy 4 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-21.png" alt="" />
+          Acts 2 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-6-20.png" alt="" />
+          Luke 6 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Jeremiah-1-5.png" alt="" />
+          Jeremiah 1 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-6-11.png" alt="" />
+          Ephesians 6 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-6-2.png" alt="" />
+          Galatians 6 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-3-16.png" alt="" />
+          1 Corinthians 3 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-1-14.png" alt="" />
+          Acts 1 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-4-16.png" alt="" />
+          Hebrews 4 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Titus-1-9.png" alt="" />
+          Titus 1 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-16-17.png" alt="" />
+          Romans 16 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Daniel-12-2.png" alt="" />
+          Daniel 12 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-3-8.png" alt="" />
+          1 John 3 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-5-19.png" alt="" />
+          Ephesians 5 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-11-12.png" alt="" />
+          Romans 11 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-9-23.png" alt="" />
+          Mark 9 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-12-13.png" alt="" />
+          1 Corinthians 12 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Zechariah-9-9.png" alt="" />
+          Zechariah 9 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Leviticus-1-2.png" alt="" />
+          Leviticus 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-20-15.png" alt="" />
+          Exodus 20 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-13-17.png" alt="" />
+          Hebrews 13 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-2-16.png" alt="" />
+          Galatians 2 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-19-16.png" alt="" />
+          Matthew 19 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-11-33.png" alt="" />
+          Romans 11 : 33
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-8-1.png" alt="" />
+          John 8 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-2-9.png" alt="" />
+          1 Corinthians 2 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-20-24.png" alt="" />
+          Acts 20 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-20-17.png" alt="" />
+          Acts 20 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-16-16.png" alt="" />
+          Acts 16 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-3.png" alt="" />
+          John 14 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-10-32.png" alt="" />
+          Matthew 10 : 32
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-1-5.png" alt="" />
+          Revelation 1 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-15-51.png" alt="" />
+          1 Corinthians 15 : 51
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-3-20.png" alt="" />
+          Romans 3 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-23.png" alt="" />
+          Acts 2 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-23.png" alt="" />
+          John 3 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-12-49.png" alt="" />
+          Luke 12 : 49
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Job-19-25.png" alt="" />
+          Job 19 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-3-14.png" alt="" />
+          Revelation 3 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Timothy-4-2.png" alt="" />
+          2 Timothy 4 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Thessalonians-5-23.png" alt="" />
+          1 Thessalonians 5 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-3-10.png" alt="" />
+          Philippians 3 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-7-8.png" alt="" />
+          1 Corinthians 7 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-5-5.png" alt="" />
+          Romans 5 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-10-44.png" alt="" />
+          Acts 10 : 44
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-15-18.png" alt="" />
+          John 15 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-2-27.png" alt="" />
+          Mark 2 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-3-13.png" alt="" />
+          Matthew 3 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Zechariah-12-10.png" alt="" />
+          Zechariah 12 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-4-18.png" alt="" />
+          1 John 4 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-2-46.png" alt="" />
+          Acts 2 : 46
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-5.png" alt="" />
+          Luke 1 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-27-46.png" alt="" />
+          Matthew 27 : 46
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-59-2.png" alt="" />
+          Isaiah 59 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-13.png" alt="" />
+          Romans 1 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-6-46.png" alt="" />
+          Luke 6 : 46
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Timothy-3-15.png" alt="" />
+          1 Timothy 3 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Thessalonians-4-5.png" alt="" />
+          1 Thessalonians 4 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-1-11.png" alt="" />
+          Matthew 1 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-9-22.png" alt="" />
+          Hebrews 9 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-20.png" alt="" />
+          John 1 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-2-1.png" alt="" />
+          Genesis 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-12-4.png" alt="" />
+          1 Corinthians 12 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-8.png" alt="" />
+          Romans 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-8-36.png" alt="" />
+          Acts 8 : 36
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-12-32.png" alt="" />
+          John 12 : 32
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-20.png" alt="" />
+          John 5 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-2-3.png" alt="" />
+          Genesis 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-2-3.png" alt="" />
+          Revelation 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-4-5.png" alt="" />
+          1 Peter 4 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-2-13.png" alt="" />
+          Philippians 2 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-12-1.png" alt="" />
+          John 12 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-1-13.png" alt="" />
+          1 Peter 1 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-13-1.png" alt="" />
+          Hebrews 13 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-1-13.png" alt="" />
+          Genesis 1 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-2-6.png" alt="" />
+          Colossians 2 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-12-15.png" alt="" />
+          Romans 12 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-2-52.png" alt="" />
+          Luke 2 : 52
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Numbers-1-2.png" alt="" />
+          Numbers 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Titus-3-4.png" alt="" />
+          Titus 3 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-21.png" alt="" />
+          Romans 1 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-16.png" alt="" />
+          John 2 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-21-25.png" alt="" />
+          Luke 21 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Samuel-16-7.png" alt="" />
+          1 Samuel 16 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-22-17.png" alt="" />
+          Revelation 22 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-3-27.png" alt="" />
+          Galatians 3 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-6-14.png" alt="" />
+          Matthew 6 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-2-14.png" alt="" />
+          1 Corinthians 2 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-23-23.png" alt="" />
+          Matthew 23 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-3-4.png" alt="" />
+          James 3 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-3-5.png" alt="" />
+          Philippians 3 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-14-22.png" alt="" />
+          Acts 14 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-10-35.png" alt="" />
+          John 10 : 35
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-6-1.png" alt="" />
+          John 6 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-24-39.png" alt="" />
+          Luke 24 : 39
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-4-14.png" alt="" />
+          Luke 4 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-4-35.png" alt="" />
+          Mark 4 : 35
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-46-1.png" alt="" />
+          Psalms 46 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-3-1.png" alt="" />
+          Acts 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Amos-3-7.png" alt="" />
+          Amos 3 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Daniel-2-44.png" alt="" />
+          Daniel 2 : 44
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/3-John-1-3.png" alt="" />
+          3 John 1 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-3-25.png" alt="" />
+          Romans 3 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-28.png" alt="" />
+          John 14 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-14-13.png" alt="" />
+          John 14 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-22-31.png" alt="" />
+          Luke 22 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Amos-8-11.png" alt="" />
+          Amos 8 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-1-8.png" alt="" />
+          Revelation 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-6-1.png" alt="" />
+          Hebrews 6 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-26-18.png" alt="" />
+          Acts 26 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-9.png" alt="" />
+          John 3 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-22-23.png" alt="" />
+          Luke 22 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-4-4.png" alt="" />
+          1 John 4 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-10-12.png" alt="" />
+          Luke 10 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-139-1.png" alt="" />
+          Psalms 139 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-12-7.png" alt="" />
+          Revelation 12 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-2-3.png" alt="" />
+          1 John 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Timothy-2-2.png" alt="" />
+          2 Timothy 2 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-1-5.png" alt="" />
+          Philippians 1 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-10-1.png" alt="" />
+          Acts 10 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-10-9.png" alt="" />
+          John 10 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-3-22.png" alt="" />
+          John 3 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-3-21.png" alt="" />
+          Luke 3 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-13-32.png" alt="" />
+          Mark 13 : 32
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Daniel-9-10.png" alt="" />
+          Daniel 9 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-127-3.png" alt="" />
+          Psalms 127 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-3-1.png" alt="" />
+          Exodus 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-17-1.png" alt="" />
+          Genesis 17 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-4-11.png" alt="" />
+          Revelation 4 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-2-17.png" alt="" />
+          James 2 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Titus-2-14.png" alt="" />
+          Titus 2 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-24.png" alt="" />
+          Romans 1 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-9-51.png" alt="" />
+          Luke 9 : 51
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-9-28.png" alt="" />
+          Luke 9 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Song-of-Songs-2-1.png" alt="" />
+          Song of Solomon 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-22-12.png" alt="" />
+          Revelation 22 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-5-9.png" alt="" />
+          Revelation 5 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-5-1.png" alt="" />
+          1 John 5 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-2-9.png" alt="" />
+          Hebrews 2 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Titus-3-1.png" alt="" />
+          Titus 3 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Galatians-1-5.png" alt="" />
+          Galatians 1 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-1-32.png" alt="" />
+          Luke 1 : 32
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-25-34.png" alt="" />
+          Matthew 25 : 34
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-4-17.png" alt="" />
+          Ephesians 4 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-1-10.png" alt="" />
+          1 Corinthians 1 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-12-6.png" alt="" />
+          Romans 12 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-12-15.png" alt="" />
+          Luke 12 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-10-13.png" alt="" />
+          Mark 10 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-25-46.png" alt="" />
+          Matthew 25 : 46
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-24-29.png" alt="" />
+          Matthew 24 : 29
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Malachi-3-8.png" alt="" />
+          Malachi 3 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-4-17.png" alt="" />
+          James 4 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-1-2.png" alt="" />
+          Hebrews 1 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-15-13.png" alt="" />
+          Romans 15 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-14-1.png" alt="" />
+          Romans 14 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-12-31.png" alt="" />
+          John 12 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-12.png" alt="" />
+          John 5 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-14-22.png" alt="" />
+          Matthew 14 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-19-7.png" alt="" />
+          Psalms 19 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-1-9.png" alt="" />
+          1 Peter 1 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-11-3.png" alt="" />
+          Hebrews 11 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-3-12.png" alt="" />
+          Philippians 3 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-14-23.png" alt="" />
+          Acts 14 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-16-1.png" alt="" />
+          Luke 16 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-42-1.png" alt="" />
+          Isaiah 42 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Numbers-6-24.png" alt="" />
+          Numbers 6 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/James-5-7.png" alt="" />
+          James 5 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-6-4.png" alt="" />
+          Hebrews 6 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-10-16.png" alt="" />
+          John 10 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-5-1.png" alt="" />
+          Mark 5 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-24-35.png" alt="" />
+          Matthew 24 : 35
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ecclesiastes-1-11.png" alt="" />
+          Ecclesiastes 1 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-5-1.png" alt="" />
+          Exodus 5 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-3-21.png" alt="" />
+          1 Peter 3 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-1-19.png" alt="" />
+          Romans 1 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-15-9.png" alt="" />
+          John 15 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-15-4.png" alt="" />
+          John 15 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-17-20.png" alt="" />
+          Luke 17 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-9-10.png" alt="" />
+          1 Corinthians 9 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-11-25.png" alt="" />
+          Romans 11 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-6.png" alt="" />
+          John 2 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-1-17.png" alt="" />
+          John 1 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-4-10.png" alt="" />
+          1 John 4 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-17-31.png" alt="" />
+          Acts 17 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-7-38.png" alt="" />
+          John 7 : 38
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-22.png" alt="" />
+          John 2 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-7-1.png" alt="" />
+          Mark 7 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-9-10.png" alt="" />
+          Isaiah 9 : 10
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-1-7.png" alt="" />
+          Acts 1 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-8-24.png" alt="" />
+          John 8 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-22.png" alt="" />
+          John 5 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Proverbs-30-5.png" alt="" />
+          Proverbs 30 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Samuel-2-3.png" alt="" />
+          1 Samuel 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-20-15.png" alt="" />
+          Revelation 20 : 15
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-1-13.png" alt="" />
+          2 Peter 1 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-8-12.png" alt="" />
+          Acts 8 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-8-1.png" alt="" />
+          Acts 8 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Isaiah-55-11.png" alt="" />
+          Isaiah 55 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-14-1.png" alt="" />
+          Psalms 14 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-20-21.png" alt="" />
+          Acts 20 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-20.png" alt="" />
+          John 4 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-8.png" alt="" />
+          Matthew 5 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-24-27.png" alt="" />
+          Luke 24 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-16-26.png" alt="" />
+          Matthew 16 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-4-19.png" alt="" />
+          1 John 4 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Peter-3-8.png" alt="" />
+          2 Peter 3 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-6-17.png" alt="" />
+          Ephesians 6 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-17-11.png" alt="" />
+          John 17 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Proverbs-27-17.png" alt="" />
+          Proverbs 27 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-2-16.png" alt="" />
+          Genesis 2 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hebrews-10-26.png" alt="" />
+          Hebrews 10 : 26
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-2-3.png" alt="" />
+          2 Corinthians 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-11-25.png" alt="" />
+          Matthew 11 : 25
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-27-1.png" alt="" />
+          Psalms 27 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-24-1.png" alt="" />
+          Psalms 24 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Job-1-1.png" alt="" />
+          Job 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-20.png" alt="" />
+          John 2 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-2-4.png" alt="" />
+          John 2 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-8-36.png" alt="" />
+          Mark 8 : 36
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Hosea-11-1.png" alt="" />
+          Hosea 11 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-15-1.png" alt="" />
+          Genesis 15 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-1-1.png" alt="" />
+          Ephesians 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-10-12.png" alt="" />
+          Romans 10 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-20-32.png" alt="" />
+          Acts 20 : 32
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-8-9.png" alt="" />
+          Luke 8 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-6-31.png" alt="" />
+          Luke 6 : 31
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-1-8.png" alt="" />
+          Matthew 1 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Genesis-3-6.png" alt="" />
+          Genesis 3 : 6
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-2-20.png" alt="" />
+          Ephesians 2 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-16-18.png" alt="" />
+          John 16 : 18
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-8-27.png" alt="" />
+          Mark 8 : 27
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-24-24.png" alt="" />
+          Matthew 24 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Numbers-23-19.png" alt="" />
+          Numbers 23 : 19
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Revelation-1-1.png" alt="" />
+          Revelation 1 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-5-8.png" alt="" />
+          1 John 5 : 8
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-2-13.png" alt="" />
+          Colossians 2 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-4-11.png" alt="" />
+          Philippians 4 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-5-23.png" alt="" />
+          Ephesians 5 : 23
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-5-7.png" alt="" />
+          Ephesians 5 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-1-12.png" alt="" />
+          Ephesians 1 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-8-9.png" alt="" />
+          2 Corinthians 8 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Psalms-51-5.png" alt="" />
+          Psalms 51 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Joshua-24-14.png" alt="" />
+          Joshua 24 : 14
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Exodus-20-2.png" alt="" />
+          Exodus 20 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philemon-1-21.png" alt="" />
+          Philemon 1 : 21
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Philippians-3-13.png" alt="" />
+          Philippians 3 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-5-9.png" alt="" />
+          Romans 5 : 9
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-17-22.png" alt="" />
+          Acts 17 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-6-53.png" alt="" />
+          John 6 : 53
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-2-41.png" alt="" />
+          Luke 2 : 41
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Mark-10-12.png" alt="" />
+          Mark 10 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-13-24.png" alt="" />
+          Matthew 13 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-2-4.png" alt="" />
+          1 Peter 2 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Peter-2-2.png" alt="" />
+          1 Peter 2 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Thessalonians-2-3.png" alt="" />
+          2 Thessalonians 2 : 3
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Colossians-1-24.png" alt="" />
+          Colossians 1 : 24
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-12-4.png" alt="" />
+          Romans 12 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-37.png" alt="" />
+          Romans 8 : 37
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-8-7.png" alt="" />
+          Romans 8 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Acts-13-2.png" alt="" />
+          Acts 13 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-17.png" alt="" />
+          John 5 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Luke-17-11.png" alt="" />
+          Luke 17 : 11
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-17-20.png" alt="" />
+          Matthew 17 : 20
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ecclesiastes-1-12.png" alt="" />
+          Ecclesiastes 1 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-John-5-4.png" alt="" />
+          1 John 5 : 4
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Timothy-3-5.png" alt="" />
+          1 Timothy 3 : 5
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Corinthians-11-12.png" alt="" />
+          1 Corinthians 11 : 12
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Romans-2-1.png" alt="" />
+          Romans 2 : 1
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-20-22.png" alt="" />
+          John 20 : 22
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-5-16.png" alt="" />
+          John 5 : 16
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-4-13.png" alt="" />
+          John 4 : 13
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Thessalonians-5-17.png" alt="" />
+          1 Thessalonians 5 : 17
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Ephesians-2-2.png" alt="" />
+          Ephesians 2 : 2
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/John-20-30.png" alt="" />
+          John 20 : 30
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/Matthew-5-28.png" alt="" />
+          Matthew 5 : 28
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/1-Timothy-6-7.png" alt="" />
+          1 Timothy 6 : 7
+          <img class="lazyload" data-src="https://biblefarm.github.io/posts-en/images/2-Corinthians-9-10.png" alt="" />
+          2 Corinthians 9 : 10
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- ////////////////////////// -->
+    <!-- BEGIN JS website/israel dependencies -->
+    <!-- ////////////////////////// -->
+    <!-- jQuery -->
+    <script src="dependencies/offline_dependency_2017-11-16_jquery-3.2.1.min.js" type="text/javascript"></script>
+    <!-- lazysizes.min.js -->
+    <script src="dependencies/offline_dependency_2019-02-16_lazysizes_v4.1.6.min.js" type="text/javascript"></script>
+
+    <!-- ////////////////////////// -->
+    <!-- END JS website/israel dependencies -->
+    <!-- ////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+    </html>
