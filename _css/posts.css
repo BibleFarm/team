@@ -442,7 +442,9 @@ font-size: 19px;
 		padding: 10px;
 		text-align: center;
 	}
-
+.love {
+	color:red;
+}
 
 
 /* END css for posting pages */
