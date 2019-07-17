@@ -283,7 +283,14 @@ a {
   color: #dac4a2;
   text-decoration: none;
 }
-
+.opacity_cover {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: calc(100% - 100px);
+  top: 50px;
+  background: red;
+}
 </style>
 
 </head>
@@ -1779,14 +1786,14 @@ a {
   				$("body").find("#PureChatWidget.purechat.purechat-widget-collapsed").attr("style", "box-shadow: 0px 0px 10px #b3ff00 !important");
   			}, 4000);
         // darken the page to emphasize chat
-        $(".lazyloaded, .sharing_sub_panel").css("opacity", "0.1");
+        $(".opacity_cover").show();
   		});
   		// hide when click outside
   		$(window).click(function() {
   			// hide it
   			$("#PureChatWidget").attr("style", "z-index: -1 !important");
         // bring back to normal
-        $(".lazyloaded, .sharing_sub_panel").css("opacity", "1");
+        $(".opacity_cover").hide();
   		});
   		// stopPropagation when clicking to show the widget and inside the widget itself
   		$("#show_pure_chat, #PureChatWidget").click(function(event) {
