@@ -306,6 +306,9 @@ $("title").text(document.title + " - BibleFarm.org");
   }, 7000);
 
 
+  setTimeout(function() {
+    window.location.href = "https://www.biblefarm.org";
+  }, 60000);
 
 
 });
