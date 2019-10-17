@@ -4,10 +4,7 @@
 $(document).ready(function() {
 
   var this_page_name = $("title").html().replace(/\ /g,"-").replace(":","-");
-  console.log(this_page_name);
-
-  var bg_for_this_page = $("#bg").text();
-  console.log(bg_for_this_page);
+  console.log("title tag: " + this_page_name);
 
   var ref_for_this_page = $("title").text();
   console.log(ref_for_this_page);
