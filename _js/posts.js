@@ -200,7 +200,7 @@ $("title").text(document.title + " - BibleFarm.org");
 			}, 4000);
 
 // create dynamically the element
-$("body").append('<div class="opacity_cover"></div>');
+$("body").one().append('<div class="opacity_cover"></div>');
 console.log("create dynamically opacity_cover element");
       // darken the page to emphasize chat
       $(".opacity_cover").show();
@@ -215,8 +215,8 @@ console.log("create dynamically opacity_cover element");
       // hide it
       $("#PureChatWidget").attr("style", "z-index: -1 !important");
       // bring back to normal
-      $(".opacity_cover").remove();
-      console.log("removed dynamically opacity_cover element");
+      $(".opacity_cover").hide();
+      console.log("hide dynamically opacity_cover element");
     });
 
 
