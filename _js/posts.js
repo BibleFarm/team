@@ -3,6 +3,10 @@
 ///////////////////////////////////////////////////
 $(document).ready(function() {
 
+  // create dynamically the element
+  $("body").one().append('<div class="opacity_cover"></div>');
+  console.log("create dynamically opacity_cover element");
+
   var this_page_name = $("title").html().replace(/\ /g,"-").replace(":","-");
   console.log("title tag: " + this_page_name);
 
@@ -198,9 +202,6 @@ $("title").text(document.title + " - BibleFarm.org");
       setTimeout(function() {
         $("body").find("#PureChatWidget.purechat.purechat-widget-collapsed").attr("style", "box-shadow: 0px 0px 10px #b3ff00 !important");
       }, 4000);
-      // create dynamically the element
-      $("body").one().append('<div class="opacity_cover"></div>');
-      console.log("create dynamically opacity_cover element");
             // darken the page to emphasize chat
             $(".opacity_cover").show();
     });
