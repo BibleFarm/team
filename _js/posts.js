@@ -201,6 +201,7 @@ $("title").text(document.title + " - BibleFarm.org");
 
 // create dynamically the element
 $("body").append('<div class="opacity_cover"></div>');
+console.log("create dynamically opacity_cover element");
       // darken the page to emphasize chat
       $(".opacity_cover").show();
 
