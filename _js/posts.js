@@ -215,7 +215,8 @@ console.log("create dynamically opacity_cover element");
       // hide it
       $("#PureChatWidget").attr("style", "z-index: -1 !important");
       // bring back to normal
-      $(".opacity_cover").hide();
+      $(".opacity_cover").remopve();
+      console.log("removed dynamically opacity_cover element");
     });
 
 
