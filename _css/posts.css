@@ -441,7 +441,7 @@ font-size: 19px;
 		background: black;
 		padding: 10px;
 		text-align: center;
-		color: purple;
+		color: yellow;
 	}
 .love {
 	color:red;
@@ -453,6 +453,7 @@ font-size: 19px;
 	height: 100%;
 	top: 0;
 	background: rgba(0, 0, 0, 0.9);
+	z-index: 111;
 }
 
 
