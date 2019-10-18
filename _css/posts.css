@@ -441,10 +441,10 @@ font-size: 19px;
 		background: black;
 		padding: 10px;
 		text-align: center;
-		color: purple;
+		color: green;
 	}
 .love {
-	color:red;
+	color:green;
 }
 .opacity_cover {
 	position: fixed;
