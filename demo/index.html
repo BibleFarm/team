@@ -343,7 +343,7 @@
   right: 4px;
   cursor: pointer;
 }
-
+/* BEGIN */
   </style>
 
 </head>
@@ -1781,6 +1781,168 @@
     <!-- END wrap_gofundme_modal_bar -->
 
   </div>
+
+
+  <!-- ////////////////////////// -->
+  <!-- BEGIN search feature implementation -->
+  <!-- ////////////////////////// -->
+  <!-- BEGIN wrap_center -->
+<div class="wrap_ctr bgc-0001">
+  <!-- BEGIN resizeable output components -->
+  <!-- <div class="wrap_resizeable_output"> -->
+  <div id="resize_or_not" class="wrap_resizeable_output nav_is_disabled ref_is_disabled">
+    <!-- table with all datatables inside -->
+    <!-- BEGIN wrap_ajaxed -->
+    <div class="wrap_ajaxed">
+    </div>
+    <!-- END wrap_ajaxed -->
+    <!-- BEGIN wrap_ajaxed_cloned_status -->
+<div id="wrap_ajaxed_cloned_status" class="wrap_ajaxed_cloned_status">we're still loading...</div>
+    <!-- END wrap_ajaxed_cloned_status -->
+    <!-- BEGIN wrap_searching_filters -->
+    <div class="wrap_searching_filters bgc-0001">
+      <!-- BEGIN searching_filters -->
+      <div class="searching_filters">
+        <div class="" id="searching_grk">
+          <input type="text" class="filter_grk bgc-0001" id="filter_grk" placeholder="αναζήτηση">
+        </div>
+        <div class="" id="searching_grk_tra">
+          <input type="text" class="filter_grk_tra bgc-0001" id="filter_grk_tra" placeholder="anazḗtēsē">
+        </div>
+        <div class="" id="searching_de">
+          <input type="text" class="filter_de bgc-0001" id="filter_de" placeholder="suche">
+        </div>
+        <div class="" id="searching_en">
+          <input type="text" class="filter_en bgc-0001" id="filter_en" placeholder="search">
+        </div>
+        <div class="" id="searching_es">
+          <input type="text" class="filter_es bgc-0001" id="filter_es" placeholder="buscar">
+        </div>
+        <div class="" id="searching_fr">
+          <input type="text" class="filter_fr bgc-0001" id="filter_fr" placeholder="chercher">
+        </div>
+        <div class="" id="searching_it">
+          <input type="text" class="filter_it bgc-0001" id="filter_it" placeholder="ricerca">
+        </div>
+        <div class="" id="searching_pl">
+          <input type="text" class="filter_pl bgc-0001" id="filter_pl" placeholder="szukaj">
+        </div>
+        <div class="" id="searching_pt">
+          <input type="text" class="filter_pt bgc-0001" id="filter_pt" placeholder="pesquisa">
+        </div>
+        <div class="" id="searching_heb_tra">
+          <input type="text" class="filter_heb_tra bgc-0001" id="filter_heb_tra" placeholder="chippés">
+        </div>
+        <div class="" id="searching_heb">
+          <input type="text" class="filter_heb bgc-0001" id="filter_heb" placeholder="חפש">
+        </div>
+        <table id="filters_requests_all" class="filters_requests_all">
+          <tbody class="">
+            <tr>
+              <td class="verse_num_l" id="">
+              </td>
+              <td class="filter_grk link_hover_styling" id="to_search_grk">αναζήτηση
+              </td>
+              <td class="filter_grk_tra link_hover_styling" id="to_search_grk_tra">anazḗtēsē
+              </td>
+              <td class="filter_de link_hover_styling" id="to_search_de">suche
+              </td>
+              <td class="filter_en link_hover_styling" id="to_search_en">search
+              </td>
+              <td class="filter_es link_hover_styling" id="to_search_es">buscar
+              </td>
+              <td class="filter_fr link_hover_styling" id="to_search_fr">chercher
+              </td>
+              <td class="filter_it link_hover_styling" id="to_search_it">ricerca
+              </td>
+              <td class="filter_pl link_hover_styling" id="to_search_pl">szukaj
+              </td>
+              <td class="filter_pt link_hover_styling" id="to_search_pt">pesquisa
+              </td>
+              <td class="filter_heb_tra link_hover_styling" id="to_search_heb_tra">chippés
+              </td>
+              <td class="filter_heb link_hover_styling" id="to_search_heb">חפש
+              </td>
+              <td class="verse_num_r" id="">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- END searching_filters -->
+    </div>
+    <!-- END wrap_searching_filters -->
+    <!-- BEGIN datatables example-main -->
+    <div class="search_results">
+      <div class="mode_filter">
+        <table id="example-main" class="example_main all_tables" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th>
+              </th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <!-- END datatables example-main -->
+
+    <!-- BEGIN we_are_loading_the_entire_bible -->
+<div class="we_are_loading_the_entire_bible">
+  <div class="std_item_sgl_44_center">one moment... I'm loading the entire Bible</div>
+<div class="wrap_hebrew_matrix">
+<div class="code-container">
+<div id="matrix-code"></div>
+</div>
+</div>
+</div>
+    <!-- END we_are_loading_the_entire_bible -->
+
+    <!-- BEGIN search_results_are_empty_so_search_or_browse -->
+<div class="search_results_are_empty_so_search_or_browse">
+  <div class="std_item_sgl_44_center">Alright. You are in searching mode</div>
+  <div class="std_paragraph_22_left">Default settings search the whole Bible</div>
+<div class="std_line_11_center invisible_div">.</div>
+  <div class="std_paragraph_22_left">* Left nav panel is now a filter console</div>
+<div class="std_line_11_center invisible_div">.</div>
+  <div class="std_paragraph_22_left">For example: You can select Genesis</div>
+  <div class="std_paragraph_22_left">to filter your results only in Genesis.</div>
+<div class="std_line_11_center invisible_div">.</div>
+  <div class="std_paragraph_22_left">* You can also filter by chapter or verse</div>
+<div class="std_line_11_center invisible_div">.</div>
+  <div class="std_paragraph_22_left">* Current filtering status at the bottom</div>
+  <div class="std_paragraph_22_left">* Reset your filtering status at the top.</div>
+
+  <div id="return_to_browsing_mode" class="std_item_sgl_44_center link_hover_styling">Return to browsing mode</div>
+</div>
+    <!-- END search_results_are_empty_so_search_or_browse -->
+
+
+  </div>
+  <!-- END resizeable output components -->
+</div>
+<!-- END wrap_center -->
+
+  <!-- ////////////////////////// -->
+  <!-- END search feature implementation -->
+  <!-- ////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- ////////////////////////// -->
   <!-- BEGIN JS dependencies -->
