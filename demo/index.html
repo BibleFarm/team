@@ -343,14 +343,49 @@
   right: 4px;
   cursor: pointer;
 }
-
+.menu_modal {
+  position: fixed;
+  display: none;
+  height: 400px;
+  width: 312px;
+  top: calc(4px + 44px);
+  left: 4px;
+  background: #111111;
+  z-index: 1;
+}
+.menu_icon_clone {
+  position: fixed;
+  display: block;
+  color: #d5ad6d;
+  line-height: 44px;
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+  }
+  .wrap_the_paypal_button {
+      display: inline-block;
+      text-align: center;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding-top: 5px;
+      background: black;
+      height: 60px;
+  }
   </style>
 
 </head>
 
 <body class="">
 
-  <div class="opacity_cover"></div>
+  <div class="opacity_cover">
+    <div class="menu_icon_clone">
+<i class="fas fa-bars"></i>
+    </div>
+</div>
   <!-- Pinterest pin this image -->
   <img class="pinterest_pin_this_image" src="https://team.biblefarm.org/_BibleFarm_og_image_1200x630_2019_02_03.png" data-pin-url="https://team.biblefarm.org/demo" data-pin-description="BibleFarm.org is a group of Bible doers donate & provide better nutrition for these kids. The team delivers clothes, shoes & we teach these children to put all their trust in Jesus (John 1:12), share (1John 3:17), apologize (Mat. 5:24) & forgive. #biblefarm">
 
@@ -1782,6 +1817,32 @@
 
   </div>
 
+
+<div class="menu_modal">
+  Dear YourNameHere,
+<br>
+<br>
+  We've created this demo app for you,
+  praying that you will be encouraged
+  to preach and share The Word with your
+  loved ones, friends and others around you.
+<br>
+<br>
+  Click "options" underneath the Scripture
+    you want to preach about or simply share it.
+<br>
+<br>
+  If you need any additional Bible verses,
+  please feel free to ask <span class="open_purechat bf_links">here</span>.
+<br>
+<br>
+  <div class="wrap_the_paypal_button">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="YCUGUZHYX5Y2Q"> <input alt="Donate with PayPal button" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" title="PayPal - The safer, easier way to pay online!" type="image"> <img alt="" border="0" height="1" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1">
+    </form>
+  </div>
+</div>
+
   <!-- ////////////////////////// -->
   <!-- BEGIN JS dependencies -->
   <!-- ////////////////////////// -->
@@ -1794,12 +1855,12 @@
   <!-- ////////////////////////// -->
 
   <script>
+  $(document).ready(function() {
     ////////////////////////////////////////////////////
     // BEGIN PureChat hack
     ////////////////////////////////////////////////////
-    $(document).ready(function() {
       // append gui
-      $('body').append('<div id="search"><i class="fas fa-search"></i></div><div id="info" class="open_purechat"><i class="fas fa-question"></i></div>');
+      $('body').append('<div id="menu"><i class="fas fa-bars"></i></div><div id="info" class="open_purechat"><i class="fas fa-question"></i></div>');
 
       // initial hide
       var stopWaitingForPurechat = setInterval(function() {
@@ -1860,16 +1921,30 @@
         $("#PureChatWidget").attr("style", "z-index: -1 !important");
         // bring back to normal
         $(".opacity_cover").hide();
+        // hide the menu
+        $(".menu_modal").hide("slow");
+
       });
       // stopPropagation when clicking to show the widget and inside the widget itself
       $(".open_purechat, #PureChatWidget").click(function(event) {
         event.stopPropagation();
         console.log("PureChat hide when click outside event.stopPropagation");
       });
-    });
     ////////////////////////////////////////////////////
     // END PureChat hack
     ////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////
+    // BEGIN simple menu
+    ////////////////////////////////////////////////////
+    $("#menu").on("click", function() {
+$(".menu_modal").toggle("slow");
+$(".opacity_cover").show();
+
+  });
+    ////////////////////////////////////////////////////
+    // END simple menu
+    ////////////////////////////////////////////////////
+    });
     ////////////////////////////////////////////////////
     // BEGIN PureChat load
     ////////////////////////////////////////////////////
@@ -1900,6 +1975,7 @@
     ////////////////////////////////////////////////////
     // END PureChat load
     ////////////////////////////////////////////////////
+
   </script>
 
 </body>
