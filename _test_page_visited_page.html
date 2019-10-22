@@ -21,21 +21,27 @@
 
    firebase.initializeApp(config);
  </script>
-    <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
+    <style>
+    #page_visit_recorder_table {display:none; visibility:hidden;}
+    </style>
 </head>
 <body>
- <table>
+ <table id="page_visit_recorder_table">
   <tr>
-   <td>Id: </td>
-   <td><input type="text" name="id" id="user_id" /></td>
+   <td>Record_ID</td>
+   <td><input type="text" name="Record_ID" id="Record_ID" /></td>
   </tr>
   <tr>
-   <td>Date & Time l;anded: </td>
-   <td><input type="text" name="user_visit_time" id="user_visit_time" /></td>
+   <td>Timestamp_JS</td>
+   <td><input type="text" name="Timestamp_JS" id="Timestamp_JS" /></td>
   </tr>
   <tr>
-   <td>User Name: </td>
-   <td><input type="text" name="user_name" id="user_name" /></td>
+   <td>Timestamp_Readable</td>
+   <td><input type="text" name="Timestamp_Readable" id="Timestamp_Readable" /></td>
+  </tr>
+  <tr>
+   <td>Page_Visited</td>
+   <td><input type="text" name="Page_Visited" id="Page_Visited" /></td>
   </tr>
   <tr>
    <td colspan="2">
@@ -47,7 +53,6 @@
  </table>
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" type="text/javascript"></script>
  <script src="_test_page_visited_page.js" type="text/javascript"></script>
 

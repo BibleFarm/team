@@ -18,31 +18,47 @@ $.fn.dataTable.moment = function ( format, locale ) {
     };
 };
 $.fn.dataTable.moment("YYYY/MM/DD HH:mm");
-var table = $('#tbl_users_list').DataTable ( {
-  "order": [[ 0, "desc" ]],
+var table = $('#_pages_visited').DataTable ( {
+  "order": [[ 2, "desc" ]],
   "columnDefs": [
-    {
-  "targets": 2,
+{
+  "targets": 4,
   "render": function ( data, type, row, meta ) {
     return moment(data, "YYYY/MM/DD HH:mm").fromNow();
-  }
+}
 },
 {
 // Sort column 1 (formatted date) by column 6 (hidden seconds)
 "orderData":[ 2 ],
-"targets": [ 0 ]
+"targets": [ 4 ]
 }
 ]
 } );
 firebase.database().ref('/_pages_visited/').on('child_added',function(snapshot) {
 var dataSet = [
-//  '<span class="red timestamp_class">' + snapshot.val().user_id + '</span>',
-  '<span class="red moment_format">' + snapshot.val().user_visit_time + '</span>',
-  '<span class="red">' + snapshot.val().user_name + '</span>',
-  '<span class="red moment_time_ago">' + snapshot.val().user_visit_time + '</span>'
+'<span class="Record_ID">' + snapshot.val().Record_ID + '</span>',
+'<span class="Timestamp_JS">' + snapshot.val().Timestamp_JS + '</span>',
+'<span class="Timestamp_Readable">' + snapshot.val().Timestamp_Readable + '</span>',
+  '<span class="Page_Visited">' + snapshot.val().Page_Visited + '</span>',
+  '<span class="Timestamp_Readable time_ago">' + snapshot.val().Timestamp_Readable + '</span>'
 ];
 table.rows.add([dataSet]).draw();
 });
+
+
+//////////// BEGIN delete
+$('#_pages_visited tbody').on( 'click', 'span.Record_ID', function () {
+  $(this).css("color", "red");
+  var Record_ID = $(this).text();
+  firebase.database().ref().child('/_pages_visited/' + Record_ID).remove();
+  console.log('The record is deleted successfully!');
+
+    table.row( $(this).parents('tr') ).remove()
+        .draw();
+
+} );
+
+
 
 /////////////////////////////////////
 }); // end document ready
