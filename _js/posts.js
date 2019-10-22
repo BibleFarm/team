@@ -2,6 +2,10 @@
 /// BEGIN JS for ready post modal  ///////
 ///////////////////////////////////////////////////
 $(document).ready(function() {
+  // BEGIN the get script to log visits
+    $.getScript ("PageVisits.js", function (){
+
+        console.log ("0 Running PageVisits.js");
 
   // create dynamically the element
   $("body").one().append('<div class="opacity_cover"></div>');
@@ -309,6 +313,10 @@ $("title").text(document.title + " - BibleFarm.org");
   }, 7000);
 
 
+});
+///////////////////////////////////////////////////
+/// END BEGIN the get script to log visits  ///////
+///////////////////////////////////////////////////
 });
 ///////////////////////////////////////////////////
 /// END JS for ready post modal  ///////
