@@ -1,10 +1,21 @@
 /////////////////////////////////////
 $(document).ready(function() {
+// BEGIN the first get script
+  $.getScript ("https://www.gstatic.com/firebasejs/4.9.0/firebase.js", function (){
+
+      console.log ("1 Running firebase");
+
+  $.getScript ("https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js", function (){
+
+      console.log ("2 Running mpment");
 
 // append to HEAD tag
-$("head").append('		<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>	<script>	  var config = {	   apiKey: "AIzaSyCLVyj7ZZKfcbMLmpcDT0Zws_07yPVJWRU",	   authDomain: "main-b6d09.firebaseapp.com",	   databaseURL: "https://main-b6d09.firebaseio.com",	   projectId: "main-b6d09",	   storageBucket: "main-b6d09.appspot.com",	   messagingSenderId: "255095690629",	   appId: "1:255095690629:web:ad6527ee23253615b320ec"	  };		  firebase.initializeApp(config);	</script>	   <style>	#page_visit_recorder_table {display:none; visibility:hidden;}	</style>			');
+$("head").append('<script>	  var config = {	   apiKey: "AIzaSyCLVyj7ZZKfcbMLmpcDT0Zws_07yPVJWRU",	   authDomain: "main-b6d09.firebaseapp.com",	   databaseURL: "https://main-b6d09.firebaseio.com",	   projectId: "main-b6d09",	   storageBucket: "main-b6d09.appspot.com",	   messagingSenderId: "255095690629",	   appId: "1:255095690629:web:ad6527ee23253615b320ec"	  };		  firebase.initializeApp(config);	</script>	   <style>	#page_visit_recorder_table {display:none; visibility:hidden;}	</style>			');
+console.log("3 Appended firebase config & style to head");
 // append to BODY tag
-$("body").append('		<table id="page_visit_recorder_table">	 <tr>	  <td>Record_ID</td>	  <td><input type="text" name="Record_ID" id="Record_ID" /></td>	 </tr>	 <tr>	  <td>Timestamp_JS</td>	  <td><input type="text" name="Timestamp_JS" id="Timestamp_JS" /></td>	 </tr>	 <tr>	  <td>Timestamp_Readable</td>	  <td><input type="text" name="Timestamp_Readable" id="Timestamp_Readable" /></td>	 </tr>	 <tr>	  <td>Page_Visited</td>	  <td><input type="text" name="Page_Visited" id="Page_Visited" /></td>	 </tr>	 <tr>	  <td colspan="2">	   <input id="page_visit_save"type="button" value="Save" />	   <input id="page_visit_update"type="button" value="Update" />	   <input id="page_visit_delete"type="button" value="Delete" />	  </td>	 </tr>	</table>		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" type="text/javascript"></script>				');
+$("body").append('		<table id="page_visit_recorder_table">	 <tr>	  <td>Record_ID</td>	  <td><input type="text" name="Record_ID" id="Record_ID" /></td>	 </tr>	 <tr>	  <td>Timestamp_JS</td>	  <td><input type="text" name="Timestamp_JS" id="Timestamp_JS" /></td>	 </tr>	 <tr>	  <td>Timestamp_Readable</td>	  <td><input type="text" name="Timestamp_Readable" id="Timestamp_Readable" /></td>	 </tr>	 <tr>	  <td>Page_Visited</td>	  <td><input type="text" name="Page_Visited" id="Page_Visited" /></td>	 </tr>	 <tr>	  <td colspan="2">	   <input id="page_visit_save"type="button" value="Save" />	   <input id="page_visit_update"type="button" value="Update" />	   <input id="page_visit_delete"type="button" value="Delete" />	  </td>	 </tr>	</table>');
+console.log("4 Appended recorder table to body");
+
 
 // set date & time of landing
 var currentdate = new Date();
@@ -69,6 +80,12 @@ $("#page_visit_save").trigger({
 			which: 1
 		});
 
-/////////////////////////////////////
-}); // end document ready
-/////////////////////////////////////
+    /////////////////////////////////////
+  }); // END the second get script
+    /////////////////////////////////////
+    /////////////////////////////////////
+  }); // END the first get script
+    /////////////////////////////////////
+    /////////////////////////////////////
+    }); // end document ready
+    /////////////////////////////////////
