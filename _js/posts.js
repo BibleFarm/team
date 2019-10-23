@@ -57,7 +57,7 @@ var thisPerson = $("meta[property='og:title']").attr("content");
 console.log(thisPerson);
 var thisPersonNameOnly = thisPerson.replace('shared with ❤ by ','');
 console.log(thisPersonNameOnly);   //prints: 123
-$("title").text(document.title + " - " + thisPersonNameOnly);
+$("title").text(document.title + " - " + thisPerson);
 
 
 
