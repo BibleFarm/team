@@ -19,6 +19,8 @@ $.fn.dataTable.moment = function ( format, locale ) {
 };
 $.fn.dataTable.moment("YYYY/MM/DD HH:mm");
 var table = $('#_pages_visited').DataTable ( {
+  "paging": false,
+  fixedHeader: true,
   "order": [[ 2, "desc" ]],
   "columnDefs": [
 {
