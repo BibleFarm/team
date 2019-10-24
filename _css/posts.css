@@ -162,6 +162,8 @@ body {
 	min-width: 312px;
 	max-width: 312px;
   margin: 0;
+	opacity: 1;
+transition: opacity 500ms;
 }
 /* BEGIN wrap_done_with_ready_post_next */
 .wrap_done_with_ready_post_next {
@@ -438,7 +440,7 @@ font-size: 19px;
 		top: 42px;
 		max-width: 292px;
 		min-height: 258px;
-		background: black;
+		background: #000000 url(../spinner.gif) no-repeat center;
 		padding: 10px;
 		text-align: center;
 		color: #ae9c80;

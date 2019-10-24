@@ -3,6 +3,9 @@
 ///////////////////////////////////////////////////
 $(document).ready(function() {
 
+// restrain image
+$(".wrap_image_sharing_ready_to_share div img").attr("width", "312px").attr("height", "164px");
+
   // BEGIN the get perfectScrollbar
     $.getScript ("https://team.biblefarm.org/_js/_o_v_0_6_14_perfect-scrollbar.jquery.min.js", function (){
 
