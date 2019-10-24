@@ -1,0 +1,1392 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- datatables -->
+    <link rel="stylesheet" type="text/css" href="../org/dependencies/_o_v1.10.13_jquery.dataTables.min.css" />
+    <!-- mark -->
+    <link rel="stylesheet" type="text/css" href="../org/dependencies/_o_datatables.mark_2_0_0.min.css" />
+    <!-- perfect scrollbar -->
+    <link rel="stylesheet" type="text/css" href="../org/dependencies/_o_v_0_6_14_perfect-scrollbar.min.css" />
+
+  <!-- js entire site & app ///// -->
+  <link rel="stylesheet" type="text/css" href="../org/app_css/056.css">
+
+
+</head>
+
+<body class="screenfull_the_whole_site">
+
+
+      <!-- BEGIN wrap_center -->
+      <div class="wrap_ctr bgc-0001">
+        <!-- BEGIN resizeable output components -->
+        <!-- <div class="wrap_resizeable_output"> -->
+        <div id="resize_or_not" class="wrap_resizeable_output nav_is_disabled ref_is_disabled">
+          <!-- table with all datatables inside -->
+          <!-- BEGIN wrap_ajaxed -->
+          <div class="wrap_ajaxed">
+          </div>
+          <!-- END wrap_ajaxed -->
+          <!-- BEGIN wrap_ajaxed_cloned_status -->
+		  <div id="wrap_ajaxed_cloned_status" class="wrap_ajaxed_cloned_status">we're still loading...</div>
+          <!-- END wrap_ajaxed_cloned_status -->
+          <!-- BEGIN wrap_searching_filters -->
+          <div class="wrap_searching_filters bgc-0001">
+            <!-- BEGIN searching_filters -->
+            <div class="searching_filters">
+              <div class="" id="searching_grk">
+                <input type="text" class="filter_grk bgc-0001" id="filter_grk" placeholder="αναζήτηση">
+              </div>
+              <div class="" id="searching_grk_tra">
+                <input type="text" class="filter_grk_tra bgc-0001" id="filter_grk_tra" placeholder="anazḗtēsē">
+              </div>
+              <div class="" id="searching_de">
+                <input type="text" class="filter_de bgc-0001" id="filter_de" placeholder="suche">
+              </div>
+              <div class="" id="searching_en">
+                <input type="text" class="filter_en bgc-0001" id="filter_en" placeholder="search">
+              </div>
+              <div class="" id="searching_es">
+                <input type="text" class="filter_es bgc-0001" id="filter_es" placeholder="buscar">
+              </div>
+              <div class="" id="searching_fr">
+                <input type="text" class="filter_fr bgc-0001" id="filter_fr" placeholder="chercher">
+              </div>
+              <div class="" id="searching_it">
+                <input type="text" class="filter_it bgc-0001" id="filter_it" placeholder="ricerca">
+              </div>
+              <div class="" id="searching_pl">
+                <input type="text" class="filter_pl bgc-0001" id="filter_pl" placeholder="szukaj">
+              </div>
+              <div class="" id="searching_pt">
+                <input type="text" class="filter_pt bgc-0001" id="filter_pt" placeholder="pesquisa">
+              </div>
+              <div class="" id="searching_heb_tra">
+                <input type="text" class="filter_heb_tra bgc-0001" id="filter_heb_tra" placeholder="chippés">
+              </div>
+              <div class="" id="searching_heb">
+                <input type="text" class="filter_heb bgc-0001" id="filter_heb" placeholder="חפש">
+              </div>
+              <table id="filters_requests_all" class="filters_requests_all">
+                <tbody class="">
+                  <tr>
+                    <td class="verse_num_l" id="">
+                    </td>
+                    <td class="filter_grk link_hover_styling" id="to_search_grk">αναζήτηση
+                    </td>
+                    <td class="filter_grk_tra link_hover_styling" id="to_search_grk_tra">anazḗtēsē
+                    </td>
+                    <td class="filter_de link_hover_styling" id="to_search_de">suche
+                    </td>
+                    <td class="filter_en link_hover_styling" id="to_search_en">search
+                    </td>
+                    <td class="filter_es link_hover_styling" id="to_search_es">buscar
+                    </td>
+                    <td class="filter_fr link_hover_styling" id="to_search_fr">chercher
+                    </td>
+                    <td class="filter_it link_hover_styling" id="to_search_it">ricerca
+                    </td>
+                    <td class="filter_pl link_hover_styling" id="to_search_pl">szukaj
+                    </td>
+                    <td class="filter_pt link_hover_styling" id="to_search_pt">pesquisa
+                    </td>
+                    <td class="filter_heb_tra link_hover_styling" id="to_search_heb_tra">chippés
+                    </td>
+                    <td class="filter_heb link_hover_styling" id="to_search_heb">חפש
+                    </td>
+                    <td class="verse_num_r" id="">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- END searching_filters -->
+          </div>
+          <!-- END wrap_searching_filters -->
+          <!-- BEGIN datatables example-main -->
+          <div class="search_results">
+            <div class="mode_filter">
+              <table id="example-main" class="example_main all_tables" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                    <th>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- END datatables example-main -->
+
+          <!-- BEGIN we_are_loading_the_entire_bible -->
+		  <div class="we_are_loading_the_entire_bible">
+        <div class="std_item_sgl_44_center">one moment... I'm loading the entire Bible</div>
+  <div class="wrap_hebrew_matrix">
+    <div class="code-container">
+      <div id="matrix-code"></div>
+    </div>
+  </div>
+      </div>
+          <!-- END we_are_loading_the_entire_bible -->
+
+          <!-- BEGIN search_results_are_empty_so_search_or_browse -->
+		  <div class="search_results_are_empty_so_search_or_browse">
+        <div class="std_item_sgl_44_center">Alright. You are in searching mode</div>
+        <div class="std_paragraph_22_left">Default settings search the whole Bible</div>
+<div class="std_line_11_center invisible_div">.</div>
+        <div class="std_paragraph_22_left">* Left nav panel is now a filter console</div>
+<div class="std_line_11_center invisible_div">.</div>
+        <div class="std_paragraph_22_left">For example: You can select Genesis</div>
+        <div class="std_paragraph_22_left">to filter your results only in Genesis.</div>
+<div class="std_line_11_center invisible_div">.</div>
+        <div class="std_paragraph_22_left">* You can also filter by chapter or verse</div>
+<div class="std_line_11_center invisible_div">.</div>
+        <div class="std_paragraph_22_left">* Current filtering status at the bottom</div>
+        <div class="std_paragraph_22_left">* Reset your filtering status at the top.</div>
+
+        <div id="return_to_browsing_mode" class="std_item_sgl_44_center link_hover_styling">Return to browsing mode</div>
+		  </div>
+          <!-- END search_results_are_empty_so_search_or_browse -->
+
+
+        </div>
+        <!-- END resizeable output components -->
+      </div>
+      <!-- END wrap_center -->
+
+
+
+
+
+  <!-- jQuery -->
+  <script src="../org/dependencies/offline_dependency_2017-11-16_jquery-3.2.1.min.js" type="text/javascript"></script>
+  <!-- FitText -->
+  <script src="../org/dependencies/offline_dependency_2018-06-26_FitText_1.2.js"></script>
+  <!-- lettering -->
+  <script src="../org/dependencies/offline_dependency_2018-06-26_lettering_0.7.0..min.js"></script>
+  <!-- highlight -->
+  <script src="../org/dependencies/offline_dependency_2018-06-26_highlight_9.12.0.js"></script>
+  <!-- textillate -->
+  <script src="../org/dependencies/offline_dependency_2018-06-26_jquery.textillate.min_0.4.0.js"></script>
+  <!-- initHighlightingOnLoad -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- swiper -->
+  <script src="../org/dependencies/_o_3_4_0_swiper.min.js" type="text/javascript"></script>
+  <!-- perfect scrollbar-->
+  <script src="../org/dependencies/_o_v_0_6_14_perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+  <!-- iphones & ipads add to homescreen -->
+  <script src="../org/dependencies/addtohomescreen.js" type="text/javascript"></script>
+  <!-- BEGIN firebase auth app js -->
+  <script type="text/javascript" src="../org/dependencies/offline_dependency_2017-11-16_firebase-4.6.2.js"></script>
+  <script src="../org/dependencies/sample-config.js"></script>
+  <script src="../org/dependencies/common.js"></script>
+  <script src="../org/dependencies/offline_dependency_2017-11-16_firebaseui-2.4.1.js"></script>
+  <!-- ////////////////////////// -->
+  <!-- END firebase auth app js -->
+  <!-- ////////////////////////// -->
+  <!-- END JS website dependencies -->
+  <!-- ////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ////////////////////////// -->
+  <!-- BEGIN JS app dependencies -->
+  <!-- ////////////////////////// -->
+    <!-- datatables js -->
+    <script type="text/javascript" src="../org/dependencies/_o_v1.10.13_jquery.dataTables.min.js"></script>
+    <!-- accent neutralise js -->
+    <script type="text/javascript" src="../org/dependencies/_o_accent-neutralise_1_10_13.js"></script>
+<!-- this newer version does not work
+<script type="text/javascript" src="_o_8.4.0_jquery.mark.es6.min.js"></script>
+-->
+    <!-- mark js -->
+    <script type="text/javascript" src="../org/dependencies/_o_jquery.mark_6_1_0.min.js"></script>
+<!-- this newer version does not work
+<script type="text/javascript" src="_o_2.0.0_datatables.mark.es6.min.js"></script>
+-->
+    <!-- datatables mark js -->
+    <script type="text/javascript" src="../org/dependencies/_o_datatables.mark_2_0_0.min.js"></script>
+    <!-- perfect scrollbar js -->
+    <script type="text/javascript" src="../org/dependencies/_o_v_0_6_14_perfect-scrollbar.jquery.min.js"></script>
+    <!-- scrollTo js -->
+    <script type="text/javascript" src="../org/dependencies/jquery.scrollTo-min.js"></script>
+    <!-- ua-parser.js -->
+    <script type="text/javascript" src="../org/dependencies/ua-parser.min.0.7.12.js"></script>
+    <!-- BEGIN post_creation javascript dependencies -->
+    <!-- textFit js -->
+    <script type="text/javascript" src="../org/dependencies/_o_textFit_2.3.1.js"></script>
+    <!-- dom-to-image -->
+    <script type="text/javascript" src="../org/dependencies/_o_dom-to-image_2.5.2.js"></script>
+    <!-- END post_creation javascript dependencies -->
+    <!-- promise.js -->
+    <script type="text/javascript" src="../org/dependencies/offline_dependency_2018-02-18_promise-7.0.4.min.js"></script>
+  <!-- ////////////////////////// -->
+  <!-- END JS app dependencies -->
+  <!-- ////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+/////////////////////////////////
+// BEGIN datatables example-main
+/////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+// throttle - don't forget to implement later: https://datatables.net/reference/api/%24.fn.dataTable.util.throttle()
+/////////////////////////////////////////////////////////////////////
+// API callback click each word to search - don't forget to implement later: https://datatables.net/examples/api/api_in_init.html
+/////////////////////////////////////////////////////////////////////
+
+/* accent neutralise solution by iecwebmast https://jsfiddle.net/lbriquet/xjzuahrt/1/ */
+
+(function() {
+  var _div = document.createElement('div');
+  jQuery.fn.dataTable.ext.type.search.html = function(data) {
+    _div.innerHTML = data;
+    return _div.textContent ?
+      _div.textContent
+      .replace(/[\u0591-\u05C7]/g, '')
+      .replace(/[áÁàÀâÂäÄãÃåÅæÆ]/g, 'a')
+      .replace(/[çÇ]/g, 'c')
+      .replace(/[éÉèÈêÊëË]/g, 'e')
+      .replace(/[íÍìÌîÎïÏîĩĨĬĭ]/g, 'i')
+      .replace(/[ñÑ]/g, 'n')
+      .replace(/[óÓòÒôÔöÖœŒ]/g, 'o')
+      .replace(/[ß]/g, 's')
+      .replace(/[úÚùÙûÛüÜ]/g, 'u')
+      .replace(/[ýÝŷŶŸÿ]/g, 'n') :
+      _div.innerText.replace(/[üÜ]/g, 'u')
+      .replace(/[\u0591-\u05C7]/g, '')
+      .replace(/[áÁàÀâÂäÄãÃåÅæÆ]/g, 'a')
+      .replace(/[çÇ]/g, 'c')
+      .replace(/[éÉèÈêÊëË]/g, 'e')
+      .replace(/[íÍìÌîÎïÏîĩĨĬĭ]/g, 'i')
+      .replace(/[ñÑ]/g, 'n')
+      .replace(/[óÓòÒôÔöÖœŒ]/g, 'o')
+      .replace(/[ß]/g, 's')
+      .replace(/[úÚùÙûÛüÜ]/g, 'u')
+      .replace(/[ýÝŷŶŸÿ]/g, 'n');
+  };
+})();
+
+
+$(document).ready(function() {
+////////////////////////////////////////////
+// BEGIN loads only if user wants to search
+////////////////////////////////////////////
+  $("#to_search_en").one('click', function(e) {
+    // user want to search
+    console.log("searching feature is being requested");
+    $(".we_are_loading_the_entire_bible").show("slow");
+
+
+
+
+      // BEGIN serve different datatables depending on browser
+
+      var parser = new UAParser();
+      var result = parser.getResult();
+      $(".get_browser").append(result.browser.name + " " + result.browser.version);
+      var browser_detected = $(".browser_detected").text();
+      var Firefox = $(".get_browser:contains(Firefox)").text();
+      var Chrome = $(".get_browser:contains(Chrome)").text();
+      var Safari = $(".get_browser:contains(Safari)").text();
+      var Opera = $(".get_browser:contains(WebKit)").text();
+      var IE = $(".get_browser:contains(IE)").text();
+
+
+      if (browser_detected == Safari) { // 70px difference seems to be correct for iPhone 5s
+        $("html").css("background", "hotpink");
+
+
+
+
+
+
+
+
+
+  var table_main = $('#example-main').DataTable({
+    dom: "tip",
+    "deferRender": true,
+    "order": false,
+    "ordering": false,
+    "orderClasses": false,
+    "info": true,
+    "pagingType": "simple",
+    "pageLength": 10,
+    "ajax": "_search/data_filter_KJV_full.txt",
+    "autoWidth": false,
+    "scrollX": false,
+    "scrollY": true,
+    "fnInitComplete": function() {
+      console.log( 'DataTables has finished its initialisation.' );
+      $(".we_are_loading_the_entire_bible").hide("slow");
+
+      $('.dataTables_scrollBody').perfectScrollbar({
+        wheelPropagation: true,
+        scrollXMarginOffset: 2
+      });
+
+
+
+/*
+      // BEGIN serve different css depending on browser
+
+      var parser = new UAParser();
+      var result = parser.getResult();
+      $(".get_browser").append(result.browser.name + " " + result.browser.version);
+      var browser_detected = $(".browser_detected").text();
+      var Firefox = $(".get_browser:contains(Firefox)").text();
+      var Chrome = $(".get_browser:contains(Chrome)").text();
+      var Safari = $(".get_browser:contains(Safari)").text();
+      var Opera = $(".get_browser:contains(WebKit)").text();
+      var IE = $(".get_browser:contains(IE)").text();
+
+
+      if (browser_detected == Safari) { // 70px difference seems to be correct for iPhone 5s
+        $("body").css("background", "hotpink");
+        $(".dataTables_scrollBody").css("height", "calc(100% - 205px)").css("background", "");
+        // not working
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "135px").css("background", "hotpink");
+        $(".sm2-playlist-wrapper ul").css("max-height", "135px").css("background", "hotpink");
+
+      }
+
+
+
+
+
+      if (browser_detected == Firefox) {
+        $("body").css("background", "blue");
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "calc(100vh - 290px)").css("background", "blue");
+        $(".sm2-playlist-wrapper ul").css("max-height", "calc(100vh - 290px)").css("background", "blue");
+      }
+      if (browser_detected == Chrome) {
+        $("body").css("background", "lime");
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "calc(100vh - 290px)").css("background", "lime");
+        $(".sm2-playlist-wrapper ul").css("max-height", "calc(100vh - 290px)").css("background", "lime");
+      }
+      if (browser_detected == Safari) { // 70px difference seems to be correct for iPhone 5s
+        $("body").css("background", "hotpink");
+        $(".dataTables_scrollBody").css("height", "calc(100% - 205px)").css("background", "");
+        // not working
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "135px").css("background", "hotpink");
+        $(".sm2-playlist-wrapper ul").css("max-height", "135px").css("background", "hotpink");
+
+      }
+      if (browser_detected == Opera) {
+        $("body").css("background", "red");
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "calc(100vh - 290px)").css("background", "red");
+        $(".sm2-playlist-wrapper ul").css("max-height", "calc(100vh - 290px)").css("background", "red");
+      }
+      if (browser_detected == IE) {
+        $("body").css("background", "purple");
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "calc(100vh - 290px)").css("background", "purple");
+        $(".sm2-playlist-wrapper ul").css("max-height", "calc(100vh - 290px)").css("background", "purple");
+      }
+
+
+	  */
+
+
+      // END serve different css depending on browser
+
+
+
+
+    },
+    //on paginition page 2,3.. often scroll shown, so reset it and assign it again
+    "fnDrawCallback": function(oSettings) {
+      $('.dataTables_scrollBody').perfectScrollbar('destroy').perfectScrollbar({
+        wheelPropagation: true,
+        scrollXMarginOffset: 2
+      });
+
+//	  $(".dataTables_scrollBody").css("bottom", "92px");
+//	  $(".dataTables_scrollBody").css("padding-bottom", "192px");
+//	  $(".dataTables_scrollBody").css("box-sizing", "border-box");
+
+
+
+
+
+    },
+    language: {
+      url: '_lang/English.json'
+    },
+    mark: {
+      "filter": [".mark_ignore"],
+      "caseSensitive": true
+    },
+    "search": {
+      "smart": false
+    },
+    "columnDefs": [{
+      "targets": [0, 1, 2, 3, 4],
+      "visible": false
+    }, {
+      "type": "html",
+      "targets": '_all'
+    }, {}, {
+      "render": function(data, type, row, full, meta) {
+        return '<div><span class="hidden_chapter_id">' + row[0] + ' </span><span class="ref_bk_reg">' + row[4] + ' &nbsp</span><span class="ref_ch_reg">' + row[2] + '</span><span class="ref_ch_reg">:</span><span class="ref_vs_reg">' + row[3] + ' </span><span class="output_text_reg">' + row[5] + '</span></div>';
+      },
+      "targets": 5,
+      "visible": true
+    }]
+  });
+      } else {
+        $("html").css("background", "black");
+
+
+
+
+
+
+
+
+
+  var table_main = $('#example-main').DataTable({
+    dom: "tip",
+    "deferRender": true,
+    "order": false,
+    "ordering": false,
+    "orderClasses": false,
+    "info": true,
+    "pagingType": "simple",
+    "pageLength": 10,
+    "ajax": "_search/data_filter_KJV_full.txt",
+    "autoWidth": false,
+    "scrollX": false,
+    "scrollY": true,
+    "fnInitComplete": function() {
+      console.log( 'DataTables has finished its initialisation.' );
+      $(".we_are_loading_the_entire_bible").hide("slow");
+
+      $('.dataTables_scrollBody').perfectScrollbar({
+        wheelPropagation: true,
+        scrollXMarginOffset: 2
+      });
+
+
+
+/*
+      // BEGIN serve different css depending on browser
+
+      var parser = new UAParser();
+      var result = parser.getResult();
+      $(".get_browser").append(result.browser.name + " " + result.browser.version);
+      var browser_detected = $(".browser_detected").text();
+      var Firefox = $(".get_browser:contains(Firefox)").text();
+      var Chrome = $(".get_browser:contains(Chrome)").text();
+      var Safari = $(".get_browser:contains(Safari)").text();
+      var Opera = $(".get_browser:contains(WebKit)").text();
+      var IE = $(".get_browser:contains(IE)").text();
+
+
+      if (browser_detected == Safari) { // 70px difference seems to be correct for iPhone 5s
+        $("body").css("background", "hotpink");
+        $(".dataTables_scrollBody").css("height", "calc(100% - 205px)").css("background", "");
+        // not working
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "135px").css("background", "hotpink");
+        $(".sm2-playlist-wrapper ul").css("max-height", "135px").css("background", "hotpink");
+
+      }
+
+
+
+
+
+      if (browser_detected == Firefox) {
+        $("body").css("background", "blue");
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "calc(100vh - 290px)").css("background", "blue");
+        $(".sm2-playlist-wrapper ul").css("max-height", "calc(100vh - 290px)").css("background", "blue");
+      }
+      if (browser_detected == Chrome) {
+        $("body").css("background", "lime");
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "calc(100vh - 290px)").css("background", "lime");
+        $(".sm2-playlist-wrapper ul").css("max-height", "calc(100vh - 290px)").css("background", "lime");
+      }
+      if (browser_detected == Safari) { // 70px difference seems to be correct for iPhone 5s
+        $("body").css("background", "hotpink");
+        $(".dataTables_scrollBody").css("height", "calc(100% - 205px)").css("background", "");
+        // not working
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "135px").css("background", "hotpink");
+        $(".sm2-playlist-wrapper ul").css("max-height", "135px").css("background", "hotpink");
+
+      }
+      if (browser_detected == Opera) {
+        $("body").css("background", "red");
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "calc(100vh - 290px)").css("background", "red");
+        $(".sm2-playlist-wrapper ul").css("max-height", "calc(100vh - 290px)").css("background", "red");
+      }
+      if (browser_detected == IE) {
+        $("body").css("background", "purple");
+        $(".sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer").css("height", "calc(100vh - 290px)").css("background", "purple");
+        $(".sm2-playlist-wrapper ul").css("max-height", "calc(100vh - 290px)").css("background", "purple");
+      }
+
+
+	  */
+
+
+      // END serve different css depending on browser
+
+
+
+
+    },
+    //on paginition page 2,3.. often scroll shown, so reset it and assign it again
+    "fnDrawCallback": function(oSettings) {
+      $('.dataTables_scrollBody').perfectScrollbar('destroy').perfectScrollbar({
+        wheelPropagation: true,
+        scrollXMarginOffset: 2
+      });
+
+
+
+
+    },
+    language: {
+      url: '_lang/English.json'
+    },
+    mark: {
+      "filter": [".mark_ignore"],
+      "caseSensitive": true
+    },
+    "search": {
+      "smart": false
+    },
+    "columnDefs": [{
+      "targets": [0, 1, 2, 3, 4],
+      "visible": false
+    }, {
+      "type": "html",
+      "targets": '_all'
+    }, {}, {
+      "render": function(data, type, row, full, meta) {
+        return '<div><span class="hidden_chapter_id">' + row[0] + ' </span><span class="ref_bk_reg">' + row[4] + ' &nbsp</span><span class="ref_ch_reg">' + row[2] + '</span><span class="ref_ch_reg">:</span><span class="ref_vs_reg">' + row[3] + ' </span><span class="output_text_reg">' + row[5] + '</span></div>';
+      },
+      "targets": 5,
+      "visible": true
+    }]
+  });
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // scroll to top when paginating
+  $('#example-main').on('page.dt', function() {
+    $('.dataTables_scrollBody').animate({
+      scrollTop: 0
+    }, 300);
+  });
+
+
+
+
+  /////////////////////////////////////////////
+  // BEGIN enter filtering mode
+  /////////////////////////////////////////////
+  $('.filter_grk, .filter_grk_tra, .filter_de, .filter_en, .filter_es, .filter_fr, .filter_it, .filter_pl, .filter_pt, .filter_heb_tra, .filter_heb').on('focus', function(e) {
+    $(".wrap_ajaxed").hide("slow", "linear");
+    $("#wrap_ajaxed_cloned_status").hide("slow", "linear");
+    $(".mode_filter").show("slow", "linear");
+    $(".wrap_nav_mode_browse").hide("slow", "linear");
+    $(".wrap_nav_mode_filter").show("slow", "linear");
+
+
+
+    $(".mode_browse").hide("slow", "linear");
+
+  });
+
+  /////////////////////////////////////////////
+  // END enter filtering mode
+  /////////////////////////////////////////////
+
+
+
+
+  // solution by http://stackoverflow.com/users/870729/cale-b
+  //  search input to do smart searches. Use "" quotes like in google
+  $('.filter_grk').on('keyup', function(e) {
+    // If the length is 3 or more characters, or the user pressed ENTER, search
+    if (this.value.length >= 3 || e.keyCode == 13) {
+      table_main.columns(8).search(this.value).draw();
+      $(".wrap_ajaxed").hide("slow", "linear");
+      $(".search_results").show("slow", "linear");
+      $(".wrap_nav_mode_browse").hide("slow", "linear");
+      $(".wrap_nav_mode_filter").show("slow", "linear");
+    }
+    // Ensure we clear the search if they backspace far enough
+    if (this.value == "") {
+      table_main.columns(8).search(this.value).draw();
+      $(".search_results").hide("slow", "linear");
+      $(".wrap_nav_mode_browse").show("slow", "linear");
+      $(".wrap_nav_mode_filter").hide("slow", "linear");
+    }
+    return;
+  });
+
+  // solution by http://stackoverflow.com/users/870729/cale-b
+  //  search input to do smart searches. Use "" quotes like in google
+  $('.filter_en').on('keyup', function(e) {
+    // If the length is 3 or more characters, or the user pressed ENTER, search
+    if (this.value.length >= 3 || e.keyCode == 13) {
+      table_main.columns(5).search(jQuery.fn.DataTable.ext.type.search.html(this.value)).draw();
+      $(".wrap_ajaxed").hide("slow", "linear");
+    $("#wrap_ajaxed_cloned_status").hide("slow", "linear");
+      $(".search_results").show("slow", "linear");
+      $(".wrap_nav_mode_browse").hide("slow", "linear");
+      $(".wrap_nav_mode_filter").show("slow", "linear");
+    }
+    // Ensure we clear the search if they backspace far enough
+    if (this.value == "") {
+      table_main.columns(5).search(jQuery.fn.DataTable.ext.type.search.html(this.value)).draw();
+      $(".search_results").hide("slow", "linear");
+    }
+    return;
+  });
+
+
+  // solution by http://stackoverflow.com/users/870729/cale-b
+  //  search input to do smart searches. Use "" quotes like in google
+  $('.filter_heb').on('keyup', function(e) {
+    // If the length is 3 or more characters, or the user pressed ENTER, search
+    if (this.value.length >= 3 || e.keyCode == 13) {
+      table_main.columns(10).search(jQuery.fn.DataTable.ext.type.search.html(this.value)).draw();
+      $(".wrap_ajaxed").hide("slow", "linear");
+    $("#wrap_ajaxed_cloned_status").hide("slow", "linear");
+      $(".wrap_nav_mode_browse").hide("slow", "linear");
+      $(".wrap_nav_mode_filter").show("slow", "linear");
+
+    }
+    // Ensure we clear the search if they backspace far enough
+    if (this.value == "") {
+      table_main.columns(10).search(jQuery.fn.DataTable.ext.type.search.html(this.value)).draw();
+      $(".search_results").hide("slow", "linear");
+      $(".wrap_nav_mode_browse").show("slow", "linear");
+      $(".wrap_nav_mode_filter").hide("slow", "linear");
+    }
+    return;
+  });
+
+
+  /////////////////////////////////////////////
+  // BEGIN
+  // create the options and show them
+  // click on the options and ajax from url
+  // show the chapter in wrap_ajaxed
+  // hide filter mode stuff
+  // show browser mode and the correct chapter
+  /////////////////////////////////////////////
+
+  /* don't remember what this was for... haha!
+
+  <div class="wrap_the_tooltip"><div class="ref_header"><div class="select_analysis analysis_text_align_left link_hover_styling">analysis</div><div class="select_lexicons link_hover_styling">lexicons</div><div class="select_dictionaries link_hover_styling">dictionaries</div><div class="select_encyclopedias link_hover_styling">encyclopedias</div><div class="select_topics topics_text_align_right link_hover_styling">topics</div></div></div>
+
+  */
+  // click on the search result in filter mode
+  $('#example-main tbody').on('click', 'tr td', function(e) {
+    // clear prior search result highlighting and positioning
+    $(".menu_book_heb").parent().css("background", "");
+    $(".menu_book_tra").parent().css("background", "");
+    $(".menu_book_reg").parent().css("background", "");
+    $(".menu_chapter_reg").css("background", "");
+    $(".menu_verse_reg").css("background", "");
+    $("#browsing_mode_scrollTo_nav_left_back_to_top").trigger("click");
+    // don't remember what this was for... haha!
+    //    $(".wrap_nav_mode_filter").hide("slow", "linear");
+    //    $(".wrap_nav_mode_browse").show("slow", "linear");
+    //    $(".wrap_ajaxed").show("slow", "linear");
+    //    $(".wrap_the_tooltip").toggle("slow", "linear");
+    // $( this ).toggleClass( "wrap_the_tooltip" );
+    //$( this ).replaceWith( "<div>" + $( this ).html() + "</div>" );
+
+
+    var filtering_node = $(this).contents().filter(function() {
+        return this.nodeType == 1
+      }),
+
+      filtering_text = filtering_node.text(),
+      filtering_split_them = filtering_text.split(' '),
+      filtering_slice_them = filtering_text.slice(0, filtering_text.indexOf(" "));
+    // now access them like this
+    var filtering_section = filtering_split_them[0];
+    var filtering_book = filtering_split_them[1];
+    var filtering_chapter = filtering_split_them[2];
+    var filtering_verse = filtering_split_them[3];
+    var filtering_audio = filtering_split_them[4];
+
+    if (!filtering_node.length)
+      return;
+
+    filtering_node[0].nodeValue = filtering_text.slice(length);
+
+
+
+// set time out seq // is needed // this one was for opening section panel if needed after a click in the search results
+    setTimeout(function() {
+
+      //check if the section panel is already opened
+      if ($("#" + filtering_section + " tr td #" + filtering_book).parents().eq(6).find("." + filtering_section).hasClass('active')) {
+  console.log("coming from a search result // section panel is already opened // @ 1 sec");
+        // otherwise otherwise open it
+      } else {
+        $("#" + filtering_section + " tr td #" + filtering_book).parents().eq(6).find("." + filtering_section).trigger("click");
+  console.log("coming from a search result // we had to open the section panel // @ 1 sec");
+      }
+    }, 1000);
+
+
+// set time out seq // is needed to give time to open section panel // triggers clicks in browsing mode after a click in the search results
+   setTimeout(function() {
+
+      // trigger the click in the browsing mode
+      $("#" + filtering_section + " tr td #" + filtering_book).trigger({type: 'click', which: 1});
+  console.log("coming from a search result // we triggered the click on the book // @ 2 sec");
+      // trigger the click in the browsing mode
+      $("#example-browsing_mode_nav_left_Chapters tr td #" + filtering_chapter).trigger({type: 'click', which: 1});
+  console.log("coming from a search result // we triggered the click on the chapter // @ 2 sec");
+      // trigger the click in the browsing mode
+      $("#example-browsing_mode_nav_left_Verses tr td #" + filtering_verse).trigger("click");
+		  console.log("coming from a search result // we triggered the click on the verse // @ 2 sec");
+
+   }, 2000);
+
+// set time out seq // is not needed
+//    setTimeout(function() {
+
+      // highlight the book
+      $("#" + filtering_section + " tr td #" + filtering_book).css("border", "1px solid green").css("background", "rgba(0, 0, 0, 0.4)").addClass("book_is_selected");
+		  console.log("coming from a search result // we highlighted the book with green // @ 3 sec");
+      // highlight the chapter
+      $("#example-browsing_mode_nav_left_Chapters tr td #" + filtering_chapter).css("border", "1px solid green").css("background", "rgba(0, 0, 0, 0.4)").addClass("chapter_is_selected");
+		  console.log("coming from a search result // we highlighted the chapter with green // @ 3 sec");
+      // highlight the verse
+      $("#example-browsing_mode_nav_left_Verses tr td #" + filtering_verse).css("border", "1px solid green").css("background", "rgba(0, 0, 0, 0.4)");
+		  console.log("coming from a search result // we highlighted the verse with green // @ 3 sec");
+
+//    }, 3000);
+
+    // this is how I switch user to land in browsing mode with the selected search result
+    $(".wrap_nav_mode_filter").hide();
+    $(".wrap_nav_mode_browse").show();
+    $(".wrap_ajaxed").show();
+    $(".wrap_ajaxed_clone_status").show();
+
+  });
+  /////////////////////////////////////////////
+  // END
+  /////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /////////////////////////////////////////////
+  // BEGIN handle the clicks on the playlist items
+  /////////////////////////////////////////////
+  $('li').on('click', 'a', function(e) {
+
+    var browseToAudio = $(this).attr("class");
+    var browseToSection = $(this).attr("data-section");
+    var browseToBook = $(this).attr("data-book");
+    var browseToChapter = $(this).attr("data-chapter");
+    var currentBrowseToAudio = $("#browse_to_audio").text();
+    var currentBrowseToSection = $("#browse_to_section").text();
+    var currentBrowseToBook = $("#browse_to_book").text();
+    var currentBrowseToChapter = $("#browse_to_chapter").text();
+
+      $("#browse_to_audio").text("");
+      $("#browse_to_audio").append(browseToAudio);
+      $("#browse_to_section").text("");
+      $("#browse_to_section").append(browseToSection);
+      $("#browse_to_book").text("");
+      $("#browse_to_book").append(browseToBook);
+      $("#browse_to_chapter").text("");
+      $("#browse_to_chapter").append(browseToChapter);
+      $("#browse_to_verse").text("1");
+
+      //check if the section panel is already opened
+      if ($("#" + browseToSection + " tr td #" + browseToBook).parents().eq(6).find("." + browseToSection).hasClass('active')) {
+		  console.log("coming from a playlist item click // section panel is already opened //");
+        // otherwise otherwise open it
+      } else {
+        $("#" + browseToSection + " tr td #" + browseToBook).parents().eq(6).find("." + browseToSection).trigger("click");
+		  console.log("coming from a playlist item click // we had to open the section panel //");
+      }
+
+  });
+  /////////////////////////////////////////////
+  // END handle the clicks on the playlist items
+  /////////////////////////////////////////////
+
+  /////////////////////////////////////////////
+  // BEGIN handle the clicks on the player next item
+  /////////////////////////////////////////////
+  $('.sm2-button-bd').on('click', 'a.next', function(e) {
+
+
+setTimeout(function() {
+
+    var browseToAudio = $("ul").find("li.selected").find("a").attr("class");
+    var browseToSection = $("ul").find("li.selected").find("a").attr("data-section");
+    var browseToBook = $("ul").find("li.selected").find("a").attr("data-book");
+    var browseToChapter = $("ul").find("li.selected").find("a").attr("data-chapter");
+    var currentBrowseToAudio = $("#browse_to_audio").text();
+    var currentBrowseToSection = $("#browse_to_section").text();
+    var currentBrowseToBook = $("#browse_to_book").text();
+    var currentBrowseToChapter = $("#browse_to_chapter").text();
+
+      $("#browse_to_audio").text("");
+      $("#browse_to_audio").append(browseToAudio);
+      $("#browse_to_section").text("");
+      $("#browse_to_section").append(browseToSection);
+      $("#browse_to_book").text("");
+      $("#browse_to_book").append(browseToBook);
+      $("#browse_to_chapter").text("");
+      $("#browse_to_chapter").append(browseToChapter);
+      $("#browse_to_verse").text("1");
+
+
+
+      //check if the section panel is already opened
+      if ($("#" + browseToSection + " tr td #" + browseToBook).parents().eq(6).find("." + browseToSection).hasClass('active')) {
+		  console.log("coming from a playlist item click // section panel is already opened //");
+        // otherwise otherwise open it
+      } else {
+        $("#" + browseToSection + " tr td #" + browseToBook).parents().eq(6).find("." + browseToSection).trigger("click");
+		  console.log("coming from a playlist item click // we had to open the section panel //");
+      }
+
+}, 50);
+
+  });
+  /////////////////////////////////////////////
+  // END handle the clicks on the player next item
+  /////////////////////////////////////////////
+
+  /////////////////////////////////////////////
+  // BEGIN handle the clicks on the player previous item
+  /////////////////////////////////////////////
+  $('.sm2-button-bd').on('click', 'a.previous', function(e) {
+
+
+setTimeout(function() {
+
+    var browseToAudio = $("ul").find("li.selected").find("a").attr("class");
+    var browseToSection = $("ul").find("li.selected").find("a").attr("data-section");
+    var browseToBook = $("ul").find("li.selected").find("a").attr("data-book");
+    var browseToChapter = $("ul").find("li.selected").find("a").attr("data-chapter");
+    var currentBrowseToAudio = $("#browse_to_audio").text();
+    var currentBrowseToSection = $("#browse_to_section").text();
+    var currentBrowseToBook = $("#browse_to_book").text();
+    var currentBrowseToChapter = $("#browse_to_chapter").text();
+
+      $("#browse_to_audio").text("");
+      $("#browse_to_audio").append(browseToAudio);
+      $("#browse_to_section").text("");
+      $("#browse_to_section").append(browseToSection);
+      $("#browse_to_book").text("");
+      $("#browse_to_book").append(browseToBook);
+      $("#browse_to_chapter").text("");
+      $("#browse_to_chapter").append(browseToChapter);
+      $("#browse_to_verse").text("1");
+
+
+
+      //check if the section panel is already opened
+      if ($("#" + browseToSection + " tr td #" + browseToBook).parents().eq(6).find("." + browseToSection).hasClass('active')) {
+		  console.log("coming from a playlist item click // section panel is already opened //");
+        // otherwise otherwise open it
+      } else {
+        $("#" + browseToSection + " tr td #" + browseToBook).parents().eq(6).find("." + browseToSection).trigger("click");
+		  console.log("coming from a playlist item click // we had to open the section panel //");
+      }
+
+}, 50);
+
+  });
+  /////////////////////////////////////////////
+  // END handle the clicks on the player previous item
+  /////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //////////////////////////////////////////////
+  // working click on a word to search // later will make this will render on the ref right panel
+  // good old solution by Aliester @ stackoverflow.com
+  $('#example-main tbody').on('click', 'tr td .w', function() {
+    var wordToSearch = (this.innerHTML)
+    var regExSearch = '^' + wordToSearch + '$';
+    var example_main = $('.example_main').DataTable();
+
+    // ... do something with rowData
+    // alert('You clicked on the word ' + wordToSearch);
+    example_main.columns(5).search(wordToSearch, true, false).draw();
+    $("input.filter_en:text").val(wordToSearch);
+  });
+  //////////////////////////////////////////////
+  //////////////////////////////////////////////
+  // working click on a ref to search and load this full chapter
+  // good old solution by Aliester @ stackoverflow.com
+  /*
+    $('#example-main tbody').on('click', 'tr td .load_full_chapter', function() {
+  	var wordToSearch = (this.innerHTML)
+  // NN to find out how to jquery regExp search innerHTML ignoring tags or ignoring certain strings
+  	var regExSearch = '^' + wordToSearch +'$';
+      var example_main = $('.example_main').DataTable();
+
+      // ... do something with rowData
+      // alert('You clicked on the word ' + wordToSearch);
+      example_main.columns(8).search(wordToSearch, true, false).draw();
+          $("input.filter_reg:text").val(wordToSearch);
+    });
+  */
+  //////////////////////////////////////////////
+  //////////////////////////////////////////////////////
+  // BEGIN interlinear / parallel toggle
+  /*
+  $('#example-main tbody').on('click', '.load_interlinear', function(e) {
+      $(".load_interlinear").hide("slow", "linear");
+      $(".load_parallel").show("slow", "linear");
+    });
+  $('#example-main tbody').on('click', '.load_parallel', function(e) {
+      $(".load_interlinear").show("slow", "linear");
+      $(".load_parallel").hide("slow", "linear");
+    });
+  */
+  // END interlinear / parallel toggle
+  //////////////////////////////////////////////////////
+  /*
+  //////////////////////////////////////////////////////
+  // BEGIN interlinear toggle
+  $('#example-main tbody').on('click', '.toggle_interlinear', function(e) {
+      $(".show_interlinear").slideToggle("slow", "linear");
+    });
+  // END interlinear toggle
+  //////////////////////////////////////////////////////
+
+
+  //////////////////////////////////////////////////////
+  // BEGIN topical toggle
+    $('#example-main tbody').on('click', '.toggle_topical', function(e) {
+      $(".show_topical").slideToggle("slow", "linear");
+    });
+  // END topical toggle
+  // BEGIN show the modal for posting
+    $('#example-main tbody').on('click', '.swiper_main_pagination_next', function(e) {
+    });
+  //////////////////////////////////////////////////////
+  */
+
+
+
+
+  /*
+  /// BEGIN ////////// this is how I used to grab the verse to create the posts /////////////////////////////////////////
+    $('#example-main tbody').on('click', 'tr td', function() {
+
+
+
+
+
+  	// swiper main
+      var swiper_main = new Swiper('.swiper-container', {
+          paginationClickable: true,
+          nextButton: '.swiper_main_pagination_next',
+          prevButton: '.swiper_main_pagination_back',
+          spaceBetween: 30,
+          hashnav: true,
+          hashnavWatchState: true,
+      preventClicks: false,
+      onlyExternal: true
+      });
+
+
+
+
+
+
+
+
+
+
+  // BEGIN swipers
+
+
+  // close the modal and return to the Bible
+  $('.simulated_modal_close').on('click', function(e){
+  swiper_main.slideTo(0, 1000, false);
+  });
+  // close the modal and return to the Bible
+  $('.swiper_main_pagination_next_to_typing').on('click', function(e){
+  swiper_main.slideTo(2, 1000, false);
+  });
+
+  // swiper for background picker
+    var swiper_bg_chooser = new Swiper(".swiper-container_bg_chooser", {
+          slidesPerView: 5,
+          slidesPerColumn: 2,
+      paginationClickable: true,
+      grabCursor: true,
+      freeMode: true,
+      keyboardControl: true,
+      mousewheelControl: true,
+      preloadImages: false,
+      lazyLoading: true,
+      lazyLoadingInPrevNext: true,
+      lazyLoadingInPrevNextAmount: 5,
+      preventClicks: false,
+              scrollbar: '.swiper-scrollbar_bg_chooser',
+          scrollbarHide: true,
+          spaceBetween: 3
+    });
+
+  // END swipers
+  // BEGIN verse and ref grabbing
+  	var verseToGrab = $(this).parent().find('div.output_text_reg').text();
+  	var refToGrab = $(this).parent().find('div.ref_reg').text();
+  //	var regExSearch = '^' + verseToGrab +'$';
+  //    var example_main = $('.example_main').DataTable();
+
+      // ... do something with rowData
+  //     alert('You grabbed the verse ' + verseToGrab);
+  	 $(".square__content2").find(".textFitted").text( verseToGrab );
+  	 $(".square__content3").find(".textFitted").text( refToGrab );
+  	 $(".rectangle__content2").find(".textFitted").text( verseToGrab );
+  	 $(".rectangle__content3").find(".textFitted").text( refToGrab );
+  //    example_main.columns(8).search(verseToGrab, true, false).draw();
+
+
+
+
+  // make the refs clean in order to build the urls
+    var clean_url = ( refToGrab )
+      .replace(/(^\s+|[^a-zA-Z0-9 ]+|\s+$)/g, "-")
+      .replace(/\s+/g, "-");
+
+
+
+
+  // every time user hits "post" we need to reset to make sure they get the right verse
+  $(".swiper_main_pagination_next_to_url").hide();
+
+  $(".link_to_urls").replaceWith('<span class="link_to_urls"></span>');
+
+  $(".rectangle").attr("class", "rectangle");
+
+  $(".make_it_white").on("click", function(e) {
+    $(".rectangle").attr("class", "rectangle").addClass("bgc-0000");
+    $(".link_to_urls").replaceWith('<a class="link_to_urls" href="http://www.solidarityfarm.org/english/white/' + clean_url + '.html" target="_blank">continue</a>');
+    $(".swiper_main_pagination_next_to_url").show();
+  });
+
+
+
+
+
+
+  // BEGIN rectangle background images
+  $( ".bg-00001" ).on( "click", function(e) {$( ".rectangle" ).css({"background-image": "url('http://www.solidarityfarm.org/images/bg/00001.jpg')","background-repeat": "no-repeat"});});
+  $( ".bg-00002" ).on( "click", function(e) {$( ".rectangle" ).css({"background-image": "url('http://www.solidarityfarm.org/images/bg/00002.jpg')","background-repeat": "no-repeat"});});
+  $( ".bg-00003" ).on( "click", function(e) {$( ".rectangle" ).css({"background-image": "url('http://www.solidarityfarm.org/images/bg/00003.jpg')","background-repeat": "no-repeat"});});
+  // END rectangle background images
+
+
+
+
+  // BEGIN rectangle background colors
+  $(".bgc-0001").on("click", function(e) {
+    $(".rectangle").attr("class", "rectangle").addClass("bgc-0001");
+    $(".link_to_urls").replaceWith('<a class="link_to_urls" href="http://www.solidarityfarm.org/english/black/' + clean_url + '.html" target="_blank">continue</a>');
+      $(".swiper_main_pagination_next_to_url").show();
+
+  });
+  $(".bgc-0002").on("click", function(e) {
+    $(".rectangle").attr("class", "rectangle").addClass("bgc-0002");
+    $(".link_to_urls").replaceWith('<a class="link_to_urls" href="http://www.solidarityfarm.org/english/gray/' + clean_url + '.html" target="_blank">continue</a>');
+      $(".swiper_main_pagination_next_to_url").show();
+
+  });
+  $(".bgc-0003").on("click", function(e) {
+    $(".rectangle").attr("class", "rectangle").addClass("bgc-0003");
+    $(".link_to_urls").replaceWith('<a class="link_to_urls" href="http://www.solidarityfarm.org/english/red/' + clean_url + '.html" target="_blank">continue</a>');
+      $(".swiper_main_pagination_next_to_url").show();
+
+  });
+  $( ".bgc-0004" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0004")});
+  $( ".bgc-0005" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0005")});
+  $( ".bgc-0006" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0006")});
+  $( ".bgc-0007" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0007")});
+  $( ".bgc-0008" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0008")});
+  $( ".bgc-0009" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0009")});
+  $( ".bgc-0010" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0010")});
+  $( ".bgc-0011" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0011")});
+  $( ".bgc-0012" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0012")});
+  $( ".bgc-0013" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0013")});
+  $( ".bgc-0014" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0014")});
+  $( ".bgc-0015" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0015")});
+  $( ".bgc-0016" ).on( "click", function(e) {$( ".rectangle" ).attr('class', 'rectangle').addClass("bgc-0016")});
+  // END rectangle background colors
+
+
+
+
+
+
+
+
+      ///////// BEGIN textFit customization
+      textFit(document.getElementsByClassName("textFit_add_creation_title"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 70
+      });
+      textFit(document.getElementsByClassName("textFit_preview_message"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 60
+      });
+      textFit(document.getElementsByClassName("textFit_verse"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 70
+      });
+      textFit(document.getElementsByClassName("textFit_ref"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 70
+      });
+      textFit(document.getElementsByClassName("textFit_ad"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 70
+      });
+      textFit(document.getElementsByClassName("textFit_create_button"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 70
+      });
+
+      window.addEventListener("resize", function(event) {
+      textFit(document.getElementsByClassName("textFit_add_creation_title"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 70
+      });
+      textFit(document.getElementsByClassName("textFit_preview_message"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 60
+      });
+      textFit(document.getElementsByClassName("textFit_verse"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 70
+      });
+      textFit(document.getElementsByClassName("textFit_ref"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 70
+      });
+      textFit(document.getElementsByClassName("textFit_ad"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 70
+      });
+      textFit(document.getElementsByClassName("textFit_create_button"), {
+        multiLine: !0,
+        minFontSize: 10,
+        maxFontSize: 70
+      });
+      });
+      window.addEventListener("change", function(event) {
+        textFit(document.getElementsByClassName("textFit_preview_message"), {
+          multiLine: !0,
+          minFontSize: 10,
+          maxFontSize: 60
+        });
+      });
+
+
+
+  var inputBox = document.getElementById('input_to_edit_message');
+  inputBox.onkeyup = function(){
+      document.getElementById('edited_result').innerHTML = inputBox.value;
+          textFit(document.getElementsByClassName("textFit_preview_message"), {
+          multiLine: 0,
+          minFontSize: 10,
+          maxFontSize: 60
+        });
+  }
+
+
+
+
+
+
+      ///////// END textFit customization
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+
+  /// BEGIN ////////// this is how I used to grab the verse to create the posts /////////////////////////////////////////
+  */
+
+
+
+
+  // reset all & books & chapters & verses
+  $('#reset_all').on('click', function() {
+    var example_main = $('.example_main').DataTable();
+    var example_nav_left_Books_status = $('.example_nav_left_Books_status').DataTable();
+    var example_nav_left_Chapters_status = $('.example_nav_left_Chapters_status').DataTable();
+    var example_nav_left_Verses_status = $('.example_nav_left_Verses_status').DataTable();
+    example_main.columns(1).search("").draw();
+    example_main.columns(2).search("").draw();
+    example_main.columns(3).search("").draw();
+    example_nav_left_Books_status.columns(0).search("").draw();
+    example_nav_left_Chapters_status.columns(1).search("").draw();
+    example_nav_left_Verses_status.columns(1).search("").draw();
+  });
+  $('#reset_books').on('click', function() {
+    var example_main = $('.example_main').DataTable();
+    var example_nav_left_Books_status = $('.example_nav_left_Books_status').DataTable();
+    example_main.columns(1).search("").draw();
+    example_nav_left_Books_status.columns(0).search("").draw();
+  });
+  $('#reset_chapters').on('click', function() {
+    var example_main = $('.example_main').DataTable();
+    var example_nav_left_Chapters_status = $('.example_nav_left_Chapters_status').DataTable();
+    example_main.columns(2).search("").draw();
+    example_nav_left_Chapters_status.columns(1).search("").draw();
+  });
+  $('#reset_verses').on('click', function() {
+    var example_main = $('.example_main').DataTable();
+    var example_nav_left_Verses_status = $('.example_nav_left_Verses_status').DataTable();
+    example_main.columns(3).search("").draw();
+    example_nav_left_Verses_status.columns(1).search("").draw();
+  });
+
+
+
+
+});
+////////////////////////////////////////////
+// BEGIN loads only if user wants to search
+////////////////////////////////////////////
+
+});
+
+/////////////////////////////////
+// END datatables example-main
+/////////////////////////////////
+
+</script>
+  <!-- ////////////////////////// -->
+  <!-- js entire site & app ///// -->
+  <!-- ////////////////////////// 
+    <script type="text/javascript" src="../org/app_js/056.js"></script>
+ ////////////////////////// -->
+  <!-- ////////////////////////// -->
+  <!-- ////////////////////////// -->
+
+</body>
+</html>
